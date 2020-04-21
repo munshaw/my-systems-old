@@ -21,7 +21,7 @@ apt -t buster-backports install linux-image-amd64 firmware-amd-graphics amd64-mi
 
 ```
 
-## First Things
+## Configuring first Things
 
 I added main users to sudoers with `gpasswd -a brandon sudo`.
 
@@ -33,3 +33,5 @@ sudo ufw enable
 sudo ufw default deny incoming
 sudo ufw default allow outgoing
 ```
+
+In Tweaks, improve font rendering with Slight Hinting and Standard Antialiasing. Enable Launch new instance.
