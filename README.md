@@ -1,6 +1,6 @@
 # Workstation setup
 
-These are my notes tracking how my workstation is setup, for reproduction purposes. The target audience is me, so it may not be easy to read and breif.
+These are my notes tracking how my workstation is setup, for reproduction purposes. The target audience is me, so it may not be easy to read.
 
 ## Install Debian Buster
 
