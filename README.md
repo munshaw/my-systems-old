@@ -19,4 +19,12 @@ apt -t buster-backports install linux-image-amd64 firmware-amd-graphics amd64-mi
 
 # First Things
 
-I installed KeePassXC and Dropbox so I could log into other services.
+I added main users to sudoers with `gpasswd -a brandon sudo`.
+
+I installed KeePassXC and Dropbox so I could log into other services. A simple firewall is set up.
+```
+apt install ufw
+ufw enable
+ufw default deny incoming
+ufw default allow outgoing
+```
