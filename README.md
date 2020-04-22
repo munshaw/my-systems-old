@@ -60,7 +60,7 @@ audacity
 musescore*
 mpv
 obs
-pdftricks*
+pdfsam basic
 anki
 hardinfo
 wxmaxima
