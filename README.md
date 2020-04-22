@@ -26,9 +26,7 @@ reboot
 
 ## First steps
 
-I added main users to sudoers with `gpasswd -a brandon sudo`.
-
-I installed KeePassXC and Dropbox from Software, so I could log into other services. A simple firewall is set up with
+I added main users to sudoers with `gpasswd -a brandon sudo`. Then, I installed KeePassXC and Dropbox from Software, so I could log into other services. On Firefox, I installed HTTPS Everywhere, Privacy Badger, Facebook Container, Multi-Account Containers, and Grammarly. A simple firewall is set up with
 
 ```
 sudo apt install ufw
@@ -117,4 +115,4 @@ nix-env -i llvm-9.0.1
 nix-env -i clang-wrapper-9.0.1
 ```
 
-Finally I installed [vscode](https://code.visualstudio.com/). I installed Code Spell Checker, Todo Tree, Rewrap, Simple GHC, Brittany, and Haskell Linter.
+Finally I installed [vscode](https://code.visualstudio.com/). I installed Code Spell Checker, Todo Tree, Rewrap, Simple GHC, Brittany, and Haskell Linter. I set the font to Fira Code, and enabled ligatures. Word wrap is set to wordWrapColumn, and Rewrap Autowrap is enabled.
