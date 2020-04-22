@@ -40,13 +40,14 @@ sudo ufw default allow outgoing
 
 In Tweaks, improve font rendering with Slight Hinting and Standard Antialiasing. Enable Launch new instance.
 
-## Install some apps
+## Install some software
 
-I installed flatpak for installed newer versions of some apps.
+I installed flatpak for software that seems abandoned by Debian.
 
 ```
 sudo apt install flatpak gnome-software-plugin-flatpak
 sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+reboot
 ```
 
 Then I installed the following from Software (\* = flatpak)
@@ -66,4 +67,21 @@ hardinfo
 wxmaxima
 geogebra*
 gnome web
+```
+
+And the follwoing from the command line
+```
+apt install build-essential
+apt install net-tools
+apt install curl
+apt install git
+apt install tmux
+apt install vim
+apt install mc
+apt install texlive-full python-pygments
+apt install pandoc
+apt install racket
+apt install fonts-hack fonts-firacode fonts-linuxlibertine
+apt install sgt-puzzles
+apt install irssi
 ```
