@@ -20,6 +20,7 @@ A backported kernel and firmware was installed with
 
 ```
 apt update
+apt upgrade
 apt -t buster-backports install linux-image-amd64 firmware-amd-graphics amd64-microcode
 reboot
 ```
