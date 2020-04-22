@@ -87,3 +87,37 @@ sudo apt install fonts-hack fonts-firacode fonts-linuxlibertine
 sudo apt install sgt-puzzles
 sudo apt install irssi
 ```
+
+## External Development tools
+
+I Installed [Nix package manager](https://nixos.org/nix/), [Rust](https://rustup.rs/), [Stack](https://haskellstack.org), and [Ghcup](https://haskell.org/ghcup/) (ghcup requires you to run `sudo apt install libgmp-dev libffi-dev libncurses-dev libtinfo5`).
+
+Upgraded GHC to latest version with
+
+```
+ghcup install latest
+ghcup set latest
+```
+
+Downloaded default Stack with `stack setup`, and then install these Haskell tools.
+
+```
+stack install hoogle
+hoogle generate
+stack install hlint
+stack install brittany
+```
+
+I installed the latest version of LLVM+Clang that GHC supports. First, searched for avalible versions with
+
+```
+nix-env -qa 'llvm.*'
+nix-env -qa 'clang.*'
+```
+
+Then I installed them with
+
+```
+nix-env -i llvm-9.0.1
+nic-env -i clang-wrapper-9.0.1
+```
