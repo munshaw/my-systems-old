@@ -67,21 +67,23 @@ hardinfo
 wxmaxima
 geogebra*
 gnome web
+polari
+games*
 ```
 
 And the follwoing from the command line
+
 ```
-apt install build-essential
-apt install net-tools
-apt install curl
-apt install git
-apt install tmux
-apt install vim
-apt install mc
-apt install texlive-full python-pygments
-apt install pandoc
-apt install racket
-apt install fonts-hack fonts-firacode fonts-linuxlibertine
-apt install sgt-puzzles
-apt install irssi
+sudo apt install build-essential
+sudo apt install net-tools
+sudo apt install curl
+sudo apt install git
+sudo apt install tmux
+sudo apt install vim
+sudo apt install mc
+sudo apt install texlive-full python-pygments
+sudo apt install pandoc
+sudo apt install fonts-hack fonts-firacode fonts-linuxlibertine
+sudo apt install sgt-puzzles
+sudo apt install irssi
 ```
