@@ -1,6 +1,6 @@
 # Workstation setup
 
-These are my notes tracking how my workstation is setup, for reproduction purposes. The target audience is me, so it may not be easy to read. Applications that don't relate to programming, mathematics, multimedia and the system aren't included in here, but are mostly just installed through Software.
+These are my notes tracking how my workstation is setup, for reproduction purposes. The target audience is me, so it may not be easy to read (use the [Debian Installation Guide](https://www.debian.org/releases/stable/amd64/) instead). Applications that don't relate to programming, mathematics, multimedia and the system aren't included in here.
 
 ## Install Debian Buster
 
@@ -21,9 +21,8 @@ A backported kernel and firmware was installed with
 ```
 apt update
 apt -t buster-backports install linux-image-amd64 firmware-amd-graphics amd64-microcode
+reboot
 ```
-
-I rebooted the system with `reboot`.
 
 ## First steps
 
@@ -43,7 +42,7 @@ In Tweaks, improve font rendering with Slight Hinting and Standard Antialiasing.
 
 ## Install some software
 
-I installed flatpak for software that seems abandoned by Debian with
+I installed flatpak for software that seems too old in Debian
 
 ```
 sudo apt install flatpak gnome-software-plugin-flatpak
@@ -65,7 +64,7 @@ obs
 pdfsam basic
 hardinfo
 wxmaxima
-geogebra*
+geogebra* # Run this from the commandline `flatpak run org.geogebra.GeoGebra`
 gnome web
 polari
 ```
@@ -86,13 +85,9 @@ sudo apt install fonts-hack fonts-firacode fonts-linuxlibertine
 sudo apt install irssi
 ```
 
-## External Development tools
+## Haskell and Rust
 
-I Installed [Nix package manager](https://nixos.org/nix/), [Rust](https://rustup.rs/), [Stack](https://haskellstack.org), and [Ghcup](https://haskell.org/ghcup/) (ghcup requires you to run `sudo apt install libgmp-dev libffi-dev libncurses-dev libtinfo5`).
-
-I rebooted here to add everything into my PATH.
-
-Then upgraded GHC to latest version with
+I don't have any Rust projects going on, so this section is mostly focused on Haskell. For Ghcup dependancies, install `sudo apt install libgmp-dev libffi-dev libncurses-dev libtinfo5`. Then I Installed [Nix package manager](https://nixos.org/nix/), [Rust](https://rustup.rs/), [Stack](https://haskellstack.org), and [Ghcup](https://haskell.org/ghcup/).I rebooted here to add everything into my PATH. Then upgraded GHC to latest version with
 
 ```
 ghcup install latest
@@ -108,7 +103,7 @@ stack install hlint
 stack install brittany
 ```
 
-I installed the latest version of LLVM+Clang that GHC supports. First, searched for avalible versions with
+I installed the latest version of LLVM+Clang that GHC supports (try running ghc on a simple .hs file with `-fllvm` to see which version it supports). We can search avalible versions with
 
 ```
 nix-env -qa 'llvm.*'
@@ -121,3 +116,5 @@ Then installed them with
 nix-env -i llvm-9.0.1
 nix-env -i clang-wrapper-9.0.1
 ```
+
+Finally I installed [vscode](https://code.visualstudio.com/). I installed Code Spell Checker, Todo Tree, Rewrap, Simple GHC, Brittany, and Haskell Linter.
