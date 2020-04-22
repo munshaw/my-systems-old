@@ -1,6 +1,6 @@
 # Workstation setup
 
-These are my notes tracking how my workstation is setup, for reproduction purposes. The target audience is me, so it may not be easy to read.
+These are my notes tracking how my workstation is setup, for reproduction purposes. The target audience is me, so it may not be easy to read. Applications that don't relate to programming, mathematics, multimedia and the system aren't included in here, but are mostly just installed through Software.
 
 ## Install Debian Buster
 
@@ -63,13 +63,11 @@ musescore*
 mpv
 obs
 pdfsam basic
-anki
 hardinfo
 wxmaxima
 geogebra*
 gnome web
 polari
-games*
 ```
 
 And the follwoing from the command line
@@ -85,7 +83,6 @@ sudo apt install mc
 sudo apt install texlive-full python-pygments
 sudo apt install pandoc
 sudo apt install fonts-hack fonts-firacode fonts-linuxlibertine
-sudo apt install sgt-puzzles
 sudo apt install irssi
 ```
 
