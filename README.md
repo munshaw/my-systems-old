@@ -16,13 +16,14 @@ deb <server> buster-backports main
 deb-src <server> buster-backports main
 ```
 
-A backported kernel and firmware was installed
+A backported kernel and firmware was installed with
 
 ```
 apt update
 apt -t buster-backports install linux-image-amd64 firmware-amd-graphics amd64-microcode
-
 ```
+
+I rebooted the system with `reboot`.
 
 ## First steps
 
@@ -32,7 +33,7 @@ I installed KeePassXC and Dropbox from Software, so I could log into other servi
 
 ```
 sudo apt install ufw
-# I needed to restart here.
+reboot
 sudo ufw enable
 sudo ufw default deny incoming
 sudo ufw default allow outgoing
@@ -42,7 +43,7 @@ In Tweaks, improve font rendering with Slight Hinting and Standard Antialiasing.
 
 ## Install some software
 
-I installed flatpak for software that seems abandoned by Debian.
+I installed flatpak for software that seems abandoned by Debian with
 
 ```
 sudo apt install flatpak gnome-software-plugin-flatpak
@@ -92,14 +93,16 @@ sudo apt install irssi
 
 I Installed [Nix package manager](https://nixos.org/nix/), [Rust](https://rustup.rs/), [Stack](https://haskellstack.org), and [Ghcup](https://haskell.org/ghcup/) (ghcup requires you to run `sudo apt install libgmp-dev libffi-dev libncurses-dev libtinfo5`).
 
-Upgraded GHC to latest version with
+I rebooted here to add everything into my PATH.
+
+Then upgraded GHC to latest version with
 
 ```
 ghcup install latest
 ghcup set latest
 ```
 
-Downloaded default Stack with `stack setup`, and then install these Haskell tools.
+Then downloaded default Stack with `stack setup`, and then install these Haskell tools with
 
 ```
 stack install hoogle
@@ -115,9 +118,9 @@ nix-env -qa 'llvm.*'
 nix-env -qa 'clang.*'
 ```
 
-Then I installed them with
+Then installed them with
 
 ```
 nix-env -i llvm-9.0.1
-nic-env -i clang-wrapper-9.0.1
+nix-env -i clang-wrapper-9.0.1
 ```
