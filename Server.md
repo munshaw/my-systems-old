@@ -62,7 +62,7 @@ location / {
 
 ```
 
-Files or static pages can be shared by adding the following example location to the default and ssl server. Since root is defaulted to `/var/www/html`, this would be the directory `/var/www/html/my-pictures`. To make pi able to edit these files directly, use `sudo chown -R pi /var/www/html`. For convience, statically link this to the home directory with `ln -s /var/www/html ~/html`.
+Files or static pages can be shared by adding the following example location to the default and ssl server. Since root is defaulted to `/var/www/html`, this would be the directory `/var/www/html/my-pictures`. To make pi able to edit these files directly, use `sudo chown -R pi /var/www/html`. For convience, statically link this to the home directory with `ln -s /var/www/html ~/html`. If you need a random directory to put stuff in, you can use `openssl rand 32 | base64` to generate some characters.
 
 ```
 location /my-pictures {
