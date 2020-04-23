@@ -37,7 +37,7 @@ sudo ufw default deny incoming
 sudo ufw default allow outgoing
 ```
 
-In Tweaks, improve font rendering with Slight Hinting and Standard Antialiasing. Enable Launch new instance.
+In Tweaks, improve font rendering with Slight Hinting and Standard Antialiasing. Enable Launch new instance. In settings I assigned a static IP and manually set my DNS (google: 8.8.8.8,8.8.4.4, cloudflare: 1.1.1.1,1.0.0.1).
 
 ## Install some software
 
