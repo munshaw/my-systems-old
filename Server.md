@@ -51,9 +51,9 @@ Make this autostart with crontab with `sudo crontab -e`, and add `@reboot sudo -
 
 ## Nginx and Let's Encrypt
 
-Nginx is primarliy used as reverse proxy for Gitea, though it is also usefull for sharing files publicly or privately. The TLS certificate is managed by Let's Encrypt. First, I install nginx and the certbot with `sudo apt install nginx certbot python-certbot-nginx`. The certificate is generated with `sudo certbot --nginx -d domain.com`. To make sure the cert is updated if it expires within 30 days weekly, add `13 2 * * 1 /usr/bin/certbot renew --quiet` to `sudo crontab -e`. Randomise the time to prevent server load. We can now configure the server by editing `/etc/nginx/sites-available/default`.
+Nginx is primarliy used as reverse proxy for Gitea, and serving static files. The TLS certificate is managed by Let's Encrypt. First, I install nginx and the certbot with `sudo apt install nginx certbot python-certbot-nginx`. The certificate is generated with `sudo certbot --nginx -d domain.com`. To make sure the cert is updated if it expires within 30 days weekly, add `13 2 * * 1 /usr/bin/certbot renew --quiet` to `sudo crontab -e`. Randomise the time to prevent server load.
 
-Comment out the location statements in the default and ssl server. Gitea will run on port 3000, so we add a reverse proxy by adding the following to the default and ssl server
+We can now configure the server by editing `/etc/nginx/sites-available/default`. Comment out the location statements in the default and ssl server. Gitea will run on port 3000, so we add a reverse proxy by adding the following to the default and ssl server
 
 ```
 location / {
