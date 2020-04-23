@@ -75,6 +75,8 @@ location /my-pictures {
 }
 ```
 
+Run `sudo systemctl enable nginx` and `sudo systemctl start nginx` to start the web service. You can also use `nginx -t` to test your nginx configuration.
+
 ## Gitea
 
 [Gitea](https://gitea.io/en-us/) is the primary reason for this servers existance. First we install SQLite and Git with `sudo apt install git sqlite`. We find the latest version of Gitea [here](https://dl.gitea.io/gitea/). Installing is simply a matter of downloading the binary `sudo wget -O /usr/local/bin/gitea https://dl.gitea.io/gitea/1.9.6/gitea-1.9.6-linux-arm-6` and setting the executable bit `sudo chmod +x /usr/local/bin/gitea`. We now add a user for Gitea to run in
@@ -92,14 +94,14 @@ adduser \
 
 And create some directories for it to work in
 
-``
+```
 mkdir -p /var/lib/gitea/{custom,data,log}
 chown -R git:git /var/lib/gitea/
 chmod -R 750 /var/lib/gitea/
 mkdir /etc/gitea
 chown root:git /etc/gitea
 chmod 770 /etc/gitea
-``
+```
 
 The systemd service is installed with `wget -O /etc/systemd/system/gitea.service https://raw.githubusercontent.com/go-gitea/gitea/master/contrib/systemd/gitea.service`. We can now enable Gitea with `systemctl enable gitea` and start it with `systemctl start gitea`. You should be able to log into it with http://<server-ip>:3000/ if you temporarily unblock port 3000. Once the reverse proxy is set up, so should also be able to log in with http://<server-ip>/, http://<hostname>/, or https://<hostname>/. Set up Gitea to your preference (select SQLite as your database). After the configuration is set, lock it with
 
