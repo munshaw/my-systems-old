@@ -62,10 +62,11 @@ location / {
 
 ```
 
-Files can be shared by adding the following location to the default and ssl server (since root is defaulted to `/var/www/html`, this would be the directory `/var/www/html/my-pictures`).
+Files or static pages can be shared by adding the following example location to the default and ssl server. Since root is defaulted to `/var/www/html`, this would be the directory `/var/www/html/my-pictures`. To make pi able to edit these files directly, use `sudo chown -R pi /var/www/html`. For convience, statically link this to the home directory with `ln -s /var/www/html ~/html`.
 
 ```
 location /my-pictures {
+    # show directory listing?
     autoindex on;
 
     # First attempt to serve request as file, then
@@ -100,7 +101,7 @@ chown root:git /etc/gitea
 chmod 770 /etc/gitea
 ``
 
-The systemd service is installed with `wget -O /etc/systemd/system/gitea.service https://raw.githubusercontent.com/go-gitea/gitea/master/contrib/systemd/gitea.service`. We can now enable Gitea with `systemctl enable gitea` and start it with `systemctl start gitea`. You should be able to log into it with http://<server-ip>:3000/ if you temporarily unblock port 3000. Once the reverse proxy is set up, so should also be able to log in with http://<server-ip>/, http://<hostname>/, or https://<hostname>. Set up Gitea to your preference (select SQLite as your database). After the configuration is set, lock it with
+The systemd service is installed with `wget -O /etc/systemd/system/gitea.service https://raw.githubusercontent.com/go-gitea/gitea/master/contrib/systemd/gitea.service`. We can now enable Gitea with `systemctl enable gitea` and start it with `systemctl start gitea`. You should be able to log into it with http://<server-ip>:3000/ if you temporarily unblock port 3000. Once the reverse proxy is set up, so should also be able to log in with http://<server-ip>/, http://<hostname>/, or https://<hostname>/. Set up Gitea to your preference (select SQLite as your database). After the configuration is set, lock it with
 
 ```
 chmod 750 /etc/gitea
