@@ -79,7 +79,6 @@ sudo apt install tmux
 sudo apt install vim
 sudo apt install mc
 sudo apt install texlive-full python-pygments # Probably want this in Nix, after I learn Nix
-sudo apt install pandoc
 sudo apt install fonts-hack fonts-firacode fonts-linuxlibertine
 sudo apt install irssi
 ```
@@ -93,7 +92,7 @@ ghcup install latest
 ghcup set latest
 ```
 
-Then downloaded default Stack with `stack setup`, and then install these Haskell tools with
+Then downloaded default Stack with `stack setup`, and then install some tools with
 
 ```
 stack install hoogle
