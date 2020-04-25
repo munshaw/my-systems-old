@@ -129,4 +129,4 @@ cat {privkey,cert,chain}.pem > /home/znc-admin/.znc/znc.pem
 chown znc-admin /home/znc-admin/.znc/znc.pem
 ```
 
-Znc can be set to start automatically by adding `@reboot su znc-admin -c znc` to roots `crontab -e`.
+Znc can be set to start automatically by adding `@reboot su znc-admin -c znc` to roots `crontab -e`. After rebooting, ZNC can be accessed via the web with `https://<server>:<znc-port>/`.
