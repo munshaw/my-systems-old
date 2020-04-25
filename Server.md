@@ -109,3 +109,24 @@ The systemd service is installed with `wget -O /etc/systemd/system/gitea.service
 chmod 750 /etc/gitea
 chmod 640 /etc/gitea/app.ini
 ```
+
+## IRC Stuff
+
+I installed the IRC bounder znc with `sudo apt install znc`. Add the znc-admin user and use it to generate the configuration with
+
+```
+sudo adduser znc-admin
+su znc-admin
+znc --makeconf
+```
+
+Choose some port to open ZNC on, and allow it through ufw with `ufw allow <port>`. Copy over the Let's Encrypt certificate with
+
+```
+sudo su
+cd /etc/letsencrypt/live/domainname.com/
+cat {privkey,cert,chain}.pem > /home/znc-admin/.znc/znc.pem
+chown znc-admin /home/znc-admin/.znc/znc.pem
+```
+
+Znc can be set to start automatically by adding `@reboot su znc-admin -c znc` to roots `crontab -e`.
