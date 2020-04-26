@@ -118,18 +118,19 @@ I installed the IRC bounder znc with `sudo apt install znc`. Add the znc-admin u
 sudo adduser znc-admin
 su znc-admin
 znc --makeconf
+exit
 ```
 
 Choose some port to open ZNC on, and allow it through ufw with `ufw allow <port>`. Copy over the Let's Encrypt certificate with
 
 ```
 sudo su
-cd /etc/letsencrypt/live/domainname.com/
+cd /etc/letsencrypt/live/<domain-name>/
 cat {privkey,cert,chain}.pem > /home/znc-admin/.znc/znc.pem
 chown znc-admin /home/znc-admin/.znc/znc.pem
 ```
 
-Znc can be set to start automatically by adding `@reboot su znc-admin -c znc` to roots `crontab -e`. After rebooting, ZNC can be accessed via the web with `https://<server>:<znc-port>/`. To connect to ZNC with irssi on your client, add the following to `~/.irssi/config` in servers
+Znc can be set to start automatically by adding `@reboot su znc-admin -c znc` to `sudo crontab -e`. After rebooting, ZNC can be accessed via the web with `https://<server>:<znc-port>/`. To connect to ZNC with irssi on your client, add the following to `~/.irssi/config` in servers
 
 ```
 {
