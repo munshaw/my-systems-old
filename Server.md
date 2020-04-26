@@ -129,4 +129,14 @@ cat {privkey,cert,chain}.pem > /home/znc-admin/.znc/znc.pem
 chown znc-admin /home/znc-admin/.znc/znc.pem
 ```
 
-Znc can be set to start automatically by adding `@reboot su znc-admin -c znc` to roots `crontab -e`. After rebooting, ZNC can be accessed via the web with `https://<server>:<znc-port>/`.
+Znc can be set to start automatically by adding `@reboot su znc-admin -c znc` to roots `crontab -e`. After rebooting, ZNC can be accessed via the web with `https://<server>:<znc-port>/`. To connect to ZNC with irssi on your client, add the following to `~/.irssi/config` in servers
+
+```
+{
+address = "<server>";
+chatnet = "ZNC";
+port = "<port>";
+use_tls = "yes";
+tls_verify = "yes";
+}
+```
