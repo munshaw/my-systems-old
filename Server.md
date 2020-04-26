@@ -110,9 +110,9 @@ chmod 750 /etc/gitea
 chmod 640 /etc/gitea/app.ini
 ```
 
-## IRC Stuff
+## IRC
 
-I installed the IRC bounder znc with `sudo apt install znc`. Add the znc-admin user and use it to generate the configuration with
+I installed the IRC bouncer znc with `sudo apt install znc`. Add the znc-admin user and use it to generate the configuration with
 
 ```
 sudo adduser znc-admin
@@ -130,7 +130,7 @@ cat {privkey,cert,chain}.pem > /home/znc-admin/.znc/znc.pem
 chown znc-admin /home/znc-admin/.znc/znc.pem
 ```
 
-Znc can be set to start automatically by adding `@reboot su znc-admin -c znc` to `sudo crontab -e`. After rebooting, ZNC can be accessed via the web with `https://<server>:<znc-port>/`. To connect to ZNC with irssi on your client, add the following to `~/.irssi/config` in servers
+Znc can be set to start automatically by adding `@reboot su znc-admin -c znc` to `sudo crontab -e`. After rebooting, ZNC can be accessed via the web with `https://<server>:<znc-port>/`. To connect to ZNC with irssi on your workstation, add the following to `servers` in `~/.irssi/config`
 
 ```
 {
