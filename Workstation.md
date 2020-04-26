@@ -65,6 +65,7 @@ hardinfo
 wxmaxima
 geogebra* # Run this from the commandline `flatpak run org.geogebra.GeoGebra`
 gnome web
+hexchat
 ```
 
 And the follwoing from the command line
