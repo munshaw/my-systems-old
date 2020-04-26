@@ -27,7 +27,7 @@ reboot
 
 ## First steps
 
-I added main users to sudoers with `gpasswd -a brandon sudo`. Then, I installed KeePassXC and Dropbox from Software, so I could log into other services. On Firefox, I installed HTTPS Everywhere, Privacy Badger, and Grammarly. A simple firewall is set up with
+I added main users to sudoers with `gpasswd -a brandon sudo`. Then, I installed KeePassXC and Dropbox from Software, so I could log into other services. On Firefox, I installed HTTPS Everywhere, Privacy Badger, Clear Cache, and Grammarly. A simple firewall is set up with
 
 ```
 sudo apt install ufw
