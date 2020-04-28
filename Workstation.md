@@ -79,12 +79,12 @@ sudo apt install git
 sudo apt install tmux
 sudo apt install vim
 sudo apt install mc
-sudo apt install texlive-full python-pygments # Probably want this in Nix, after I learn Nix
 sudo apt install fonts-hack fonts-firacode fonts-linuxlibertine
 sudo apt install irssi
+sudo apt install python-pygments # For latex minted package
 ```
 
-## Haskell and Rust
+## Development stuff
 
 I don't have any Rust projects going on, so this section is mostly focused on Haskell for now. For Ghcup dependancies, install `sudo apt install libgmp-dev libffi-dev libncurses-dev libtinfo5`. Then I Installed [Nix package manager](https://nixos.org/nix/), [Rust](https://rustup.rs/), [Stack](https://haskellstack.org), and [Ghcup](https://haskell.org/ghcup/). I rebooted here to add everything into my PATH. Then upgraded GHC to latest version with
 
@@ -102,18 +102,20 @@ stack install hlint
 stack install brittany
 ```
 
-I installed the latest version of LLVM+Clang that GHC supports (try running ghc on a simple .hs file with `-fllvm` to see which version it supports). We can search avalible versions with
+I installed the latest version of LLVM+Clang that GHC supports (try running ghc on a simple .hs file with `-fllvm` to see which version it supports). I also installed the latest full latex version. We can search avalible versions with
 
 ```
 nix-env -qa 'llvm.*'
 nix-env -qa 'clang.*'
+nix-env -qa 'texlive.*'
 ```
 
-Then installed them with
+Then install them with
 
 ```
 nix-env -i llvm-9.0.1
 nix-env -i clang-wrapper-9.0.1
+nix-end -i texlive-combined-full-2019
 ```
 
 Finally I installed [vscode](https://code.visualstudio.com/). I installed Code Spell Checker, Todo Tree, Rewrap, Simple GHC, Brittany, and Haskell Linter. I set the font to Fira Code, and enabled ligatures. Word wrap is set to wordWrapColumn, and Rewrap Autowrap is enabled.
