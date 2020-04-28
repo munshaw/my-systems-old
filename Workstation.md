@@ -82,6 +82,7 @@ sudo apt install mc
 sudo apt install fonts-hack fonts-firacode fonts-linuxlibertine
 sudo apt install irssi
 sudo apt install python-pygments # For latex minted package
+sudo apt install jekyll
 ```
 
 ## Development stuff
@@ -102,13 +103,12 @@ stack install hlint
 stack install brittany
 ```
 
-I installed the latest version of LLVM+Clang that GHC supports (try running ghc on a simple .hs file with `-fllvm` to see which version it supports). I also installed the latest full latex version, and Jekyll. We can search avalible versions with
+I installed the latest version of LLVM+Clang that GHC supports (try running ghc on a simple .hs file with `-fllvm` to see which version it supports). I also installed the latest full latex version. We can search avalible versions with
 
 ```
 nix-env -qa 'llvm.*'
 nix-env -qa 'clang.*'
 nix-env -qa 'texlive.*'
-nix-env -qa 'jekyll.*'
 ```
 
 Then install them with
@@ -117,7 +117,6 @@ Then install them with
 nix-env -i llvm-9.0.1
 nix-env -i clang-wrapper-9.0.1
 nix-env -i texlive-combined-full-2019
-nix-env -i jekyll-4.0.0
 ```
 
 Finally I installed [vscode](https://code.visualstudio.com/). I installed Code Spell Checker, Todo Tree, Rewrap, Simple GHC, Brittany, and Haskell Linter. I set the font to Fira Code, and enabled ligatures. Word wrap is set to wordWrapColumn, and Rewrap Autowrap is enabled.
