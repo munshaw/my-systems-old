@@ -1,6 +1,6 @@
 # Server setup
 
-These are my notes tracking how my Raspberry Pi server is setup, for reproduction purposes. The target audience is me, so it may not be easy to read.
+These are notes for tracking how to reproduce my server. The target audience is me, so it may not be easy to read.
 
 ## Install Raspbian via NOOBS
 
