@@ -1,6 +1,6 @@
 # Workstation setup
 
-These are my notes tracking how my workstation is setup, for reproduction purposes. The target audience is me, so it may not be easy to read (use the [Debian Installation Guide](https://www.debian.org/releases/stable/amd64/) instead). Applications that don't relate to programming, mathematics, multimedia and the system aren't included in here.
+These are notes for tracking how to reproduce my workstation. The target audience is me, so it may not be easy to read (use the [Debian Installation Guide](https://www.debian.org/releases/stable/amd64/) instead). Applications that don't relate to programming, mathematics, multimedia and the system aren't included in here.
 
 ## Install Debian Buster
 
