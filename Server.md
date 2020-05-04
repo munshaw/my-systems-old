@@ -51,18 +51,23 @@ Make this autostart with crontab with `sudo crontab -e`, and add `@reboot sudo -
 
 ## Nginx and Let's Encrypt
 
-Nginx is primarliy used as reverse proxy for Gitea, and serving static files. The TLS certificate is managed by Let's Encrypt. First, I install nginx and the certbot with `sudo apt install nginx certbot python-certbot-nginx`. The certificate is generated with `sudo certbot --nginx -d domain.com`. To make sure the cert is updated if it expires within 30 days weekly, add `13 2 * * 1 /usr/bin/certbot renew --quiet` to `sudo crontab -e`. Randomise the time to prevent server load.
+Nginx is primarliy used to host the Hugo blog, as a reverse proxy for Gitea, and serving static files. The TLS certificate is managed by Let's Encrypt. First, I install nginx and the certbot with `sudo apt install nginx certbot python-certbot-nginx`. The certificate is generated with `sudo certbot --nginx -d domain.com`. To make sure the cert is updated if it expires within 30 days weekly, add `13 2 * * 1 /usr/bin/certbot renew --quiet` to `sudo crontab -e`. Randomise the time to prevent server load.
 
-We can now configure the server by editing `/etc/nginx/sites-available/default`. Comment out the location statements in the default and ssl server. Gitea will run on port 3000, so we add a reverse proxy by adding the following to the default and ssl server
+We can now configure the server by editing `/etc/nginx/sites-available/default`. Comment out the location statements in the default server and ssl server. We first try to display static pages for the blog. If that fails, we try to connect to Gitea, which will run on port 3000. Add the following to the default server and ssl server
+
 
 ```
 location / {
-    proxy_pass http://localhost:3000;
+    try_files $uri $uri/ @gitea;
 }
 
+location @gitea {
+    proxy_pass http://localhost:3000;
+}
 ```
 
-Files or static pages can be shared by adding the following example location to the default and ssl server. Since root is defaulted to `/var/www/html`, this would be the directory `/var/www/html/my-pictures`. To make pi able to edit these files directly, use `sudo chown -R pi /var/www/html`. For convience, statically link this to the home directory with `ln -s /var/www/html ~/html`. If you need a random directory to put stuff in, you can use `openssl rand 32 | base64` to generate some characters.
+
+Files can be shared by adding the following example location to the default and ssl server. Since root is defaulted to `/var/www/html`, this would be the directory `/var/www/html/my-pictures`. To make user pi able to edit these files directly, use `sudo chown -R pi /var/www/html`. For convience, statically link this to the home directory with `ln -s /var/www/html ~/html`. If you need a random directory to put stuff in, you can use `openssl rand 32 | base64` to generate some characters.
 
 ```
 location /my-pictures {
@@ -74,6 +79,8 @@ location /my-pictures {
     try_files $uri $uri/ =404;
 }
 ```
+
+
 
 Run `sudo systemctl enable nginx` and `sudo systemctl start nginx` to start the web service. You can also use `nginx -t` to test your nginx configuration.
 
