@@ -123,7 +123,26 @@ nix-env -i texlive-combined-full-2019
 nix-env -i hugo-0.69.0
 ```
 
-Finally I installed [vscode](https://code.visualstudio.com/). I installed Code Spell Checker, Todo Tree, Rewrap, Simple GHC, Brittany, Haskell Linter, and markdownlint. Disable the minimap, tab visibility, and use the Light+ theme. I set the font to Fira Code, and enabled ligatures. Word wrap is set to wordWrapColumn, and Rewrap Autowrap is enabled.
+Finally I installed [vscode](https://code.visualstudio.com/). I installed Code Spell Checker, Todo Tree, Rewrap, Simple GHC, Brittany, Haskell Linter, and markdownlint. My `settings.json` look like this
+
+```
+{
+    "window.menuBarVisibility": "toggle",
+    "todo-tree.tree.showScanModeButton": false,
+    "editor.fontFamily": "'Fira Code','Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
+    "editor.fontLigatures": true,
+    "editor.wordWrap": "wordWrapColumn",
+    "rewrap.autoWrap.enabled": false,
+    "workbench.colorTheme": "Default Light+",
+    "editor.minimap.enabled": false,
+    "workbench.editor.showTabs": false,
+    "git.autofetch": true,
+    "editor.rulers": [80],
+    "[markdown]":{
+        "editor.wordWrap": "wordWrapColumn",
+    },
+}
+```
 
 ## Settings related to the server
 
