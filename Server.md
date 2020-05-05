@@ -148,3 +148,18 @@ use_tls = "yes";
 tls_verify = "yes";
 }
 ```
+
+## Backup
+
+The Gitea server can be backed up with
+
+```
+sudo su
+cd /var/lib/gitea/
+su git
+gitea dump -c /etc/gitea/app.ini
+exit
+mv git*.zip /home/pi
+chown pi /home/pi/git*.zip
+exit
+```
