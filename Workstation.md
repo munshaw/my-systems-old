@@ -58,7 +58,7 @@ inkscape
 blender*
 audacity
 musescore*
-mpv
+mpv # Set this as default Video player
 obs
 pdfsam basic
 hardinfo
