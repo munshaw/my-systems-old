@@ -84,6 +84,8 @@ sudo apt install irssi
 sudo apt install python-pygments # For latex minted package
 ```
 
+I also downloaded the Desktop version of [Language Tool](https://languagetool.org/) to help with my writting.
+
 ## Development stuff
 
 I don't have any Rust projects going on, so this section is mostly focused on Haskell for now. For Ghcup dependancies, install `sudo apt install libgmp-dev libffi-dev libncurses-dev libtinfo5`. Then I Installed [Nix package manager](https://nixos.org/nix/), [Rust](https://rustup.rs/), [Stack](https://haskellstack.org), and [Ghcup](https://haskell.org/ghcup/). I rebooted here to add everything into my PATH. Then upgraded GHC to latest version with
