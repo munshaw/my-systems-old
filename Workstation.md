@@ -84,7 +84,7 @@ sudo apt install irssi
 sudo apt install python-pygments # For latex minted package
 ```
 
-I also downloaded the Desktop version of [Language Tool](https://languagetool.org/) to help with my writting.
+I also downloaded the Desktop version of [Language Tool](https://languagetool.org/), and downloaded the [Hemminway](http://www.hemingwayapp.com/) (with firefox) to help with my writting.
 
 ## Development stuff
 
