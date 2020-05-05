@@ -55,19 +55,19 @@ Then I installed the following from Software (\* = flatpak)
 krita
 gimp
 inkscape
-blender*   # For 2.8
+blender*    # For 2.8
 audacity
-musescore* # For 3
-mpv        # Set this as default Video player
+musescore*  # For 3
+mpv         # Set as default Video player
 obs
 pdfsam basic
 hardinfo
 wxmaxima
-geogebra*  # Run with `flatpak run org.geogebra.GeoGebra`
+geogebra*   # Run with `flatpak run org.geogebra.GeoGebra`
 gnome web
-hexchat    # Set the font to Sans 11
+hexchat     # Set font to Sans 11
 filezilla
-ghostwriter
+ghostwriter # Set font to Linux Libertine O 13
 ```
 
 And the follwoing from the command line
