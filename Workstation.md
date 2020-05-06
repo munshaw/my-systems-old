@@ -65,9 +65,9 @@ hardinfo
 wxmaxima
 geogebra*   # Run with `flatpak run org.geogebra.GeoGebra`
 gnome web
-hexchat     # Set font to Sans 11
+hexchat
 filezilla
-ghostwriter # Set font to Linux Libertine O 13
+ghostwriter
 ```
 
 And the follwoing from the command line
