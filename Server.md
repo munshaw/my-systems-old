@@ -44,7 +44,7 @@ tar vzxf noip-duc-linux.tar.gz
 cd noip-*/
 make
 sudo make install
-noip2
+sudo noip2
 ```
 
 Make this autostart with crontab with `sudo crontab -e`, and add `@reboot sudo -u root noip2` to the end of the file.
@@ -82,26 +82,27 @@ location /my-pictures {
 
 
 
-Run `sudo systemctl enable nginx` and `sudo systemctl start nginx` to start the web service. You can also use `nginx -t` to test your nginx configuration.
+Run `sudo systemctl enable nginx` and `sudo systemctl start nginx` to start the web service. You can also use `sudo nginx -t` to test your nginx configuration.
 
 ## Gitea
 
 [Gitea](https://gitea.io/en-us/) is the primary reason for this servers existance. First we install SQLite and Git with `sudo apt install git sqlite`. We find the latest version of Gitea [here](https://dl.gitea.io/gitea/). Installing is simply a matter of downloading the binary `sudo wget -O /usr/local/bin/gitea https://dl.gitea.io/gitea/1.9.6/gitea-1.9.6-linux-arm-6` and setting the executable bit `sudo chmod +x /usr/local/bin/gitea`. We now add a user for Gitea to run in
 
 ```
-adduser \
-   --system \
-   --shell /bin/bash \
-   --gecos 'Git Version Control' \
-   --group \
-   --disabled-password \
-   --home /home/git \
-   git
+sudo adduser \
+     --system \
+     --shell /bin/bash \
+     --gecos 'Git Version Control' \
+     --group \
+     --disabled-password \
+     --home /home/git \
+     git
 ```
 
 And create some directories for it to work in
 
 ```
+sudo su
 mkdir -p /var/lib/gitea/{custom,data,log}
 chown -R git:git /var/lib/gitea/
 chmod -R 750 /var/lib/gitea/
@@ -110,11 +111,11 @@ chown root:git /etc/gitea
 chmod 770 /etc/gitea
 ```
 
-The systemd service is installed with `wget -O /etc/systemd/system/gitea.service https://raw.githubusercontent.com/go-gitea/gitea/master/contrib/systemd/gitea.service`. We can now enable Gitea with `systemctl enable gitea` and start it with `systemctl start gitea`. You should be able to log into it with `http://<server-ip>:3000/` if you temporarily unblock port 3000. Once the reverse proxy is set up, so should also be able to log in with `http://<server-ip>/`, `http://<hostname>/`, or `https://<hostname>/`. Set up Gitea to your preference (select SQLite as your database). After the configuration is set, lock it with
+The systemd service is installed with `sudo wget -O /etc/systemd/system/gitea.service https://raw.githubusercontent.com/go-gitea/gitea/master/contrib/systemd/gitea.service`. We can now enable Gitea with `sudo systemctl enable gitea` and start it with `sudo systemctl start gitea`. You should be able to log into it with `http://<server-ip>:3000/` if you temporarily unblock port 3000. Once the reverse proxy is set up, so should also be able to log in with `http://<server-ip>/`, `http://<hostname>/`, or `https://<hostname>/`. Set up Gitea to your preference (select SQLite as your database). After the configuration is set, lock it with
 
 ```
-chmod 750 /etc/gitea
-chmod 640 /etc/gitea/app.ini
+sudo chmod 750 /etc/gitea
+sudo chmod 640 /etc/gitea/app.ini
 ```
 
 ## IRC
@@ -123,9 +124,9 @@ I installed the IRC bouncer znc with `sudo apt install znc`. Add the znc-admin u
 
 ```
 sudo adduser znc-admin
+sudo su
 su znc-admin
 znc --makeconf
-exit
 ```
 
 Choose some port to open ZNC on, and allow it through ufw with `ufw allow <port>`. Copy over the Let's Encrypt certificate with
@@ -162,4 +163,17 @@ exit
 mv git*.zip /home/pi
 chown pi /home/pi/git*.zip
 exit
+```
+
+Restoring the backup after unzipping looks something like
+
+```
+sudo su
+mv app.ini /etc/gitea/app.ini
+unzip gitea-repo.zip
+mv gitea-repositories /home/git/gitea-repositories
+sqlite3 /var/lib/gitea/data/gitea.db <gitea-db.sql
+chown -R git:git /etc/gitea /home/git/gitea-repositories /var/lib/gitea/data/gitea.db
+chmod 750 /etc/gitea
+chmod 640 /etc/gitea/app.ini
 ```
