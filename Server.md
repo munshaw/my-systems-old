@@ -22,14 +22,16 @@ I was then able to move the Pi to it's home over ethernet, and use it remotely.
 After SSH keys are generated for the workstation, disable password authentification in `/etc/ssh/sshd_config`. I set up the following simple firewall for the server.
 
 ```
-sudo apt install ufw
-sudo ufw enable
-sudo ufw default deny incoming
-sudo ufw default allow outgoing
-sudo ufw allow ssh
-sudo ufw limit ssh
-sudo ufw allow http
-sudo ufw allow https
+sudo su
+apt install ufw
+ufw reset
+ufw default deny incoming
+ufw default allow outgoing
+ufw allow ssh
+ufw limit ssh
+ufw allow http
+ufw allow https
+ufw enable
 ```
 
 We should also require a password for root access. Edit `/etc/sudoers.d/010_pi-nopasswd`, and change the last line to `pi ALL=(ALL) PASSWD: ALL`. Make sure to forward these ports through the router (22, 80, 443).
@@ -129,26 +131,7 @@ su znc-admin
 znc --makeconf
 ```
 
-Choose some port to open ZNC on, and allow it through ufw with `ufw allow <port>`. Copy over the Let's Encrypt certificate with
-
-```
-sudo su
-cd /etc/letsencrypt/live/<domain-name>/
-cat {privkey,cert,chain}.pem > /home/znc-admin/.znc/znc.pem
-chown znc-admin /home/znc-admin/.znc/znc.pem
-```
-
-Znc can be set to start automatically by adding `@reboot su znc-admin -c znc` to `sudo crontab -e`. After rebooting, ZNC can be accessed via the web with `https://<server>:<znc-port>/`. To connect to ZNC with irssi on your workstation, add the following to `servers` in `~/.irssi/config`
-
-```
-{
-address = "<server>";
-chatnet = "ZNC";
-port = "<port>";
-use_tls = "yes";
-tls_verify = "yes";
-}
-```
+I choose to run znc on port 7000, and keep the rest at the defaults. znc can be accessed via SSH tunnel with `ssh -L 7000:localhost:7000 <user>@<server>`. Log into the web interface at `http://localhost:7000`, or log into `localhost:7000` via irc client.
 
 ## Backup
 
