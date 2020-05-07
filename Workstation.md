@@ -106,12 +106,13 @@ stack install hlint
 stack install brittany
 ```
 
-I installed the latest version of LLVM+Clang that GHC supports (try running ghc on a simple .hs file with `-fllvm` to see which version it supports). I also installed latex and hugo. We can search avalible versions with
+I installed the latest version of LLVM+Clang that GHC supports (try running ghc on a simple .hs file with `-fllvm` to see which version it supports). I also installed valgrind, latex, and hugo. We can search avalible versions with
 
 ```
 nix-env -qa 'llvm.*'
 nix-env -qa 'clang.*'
 nix-env -qa 'texlive.*'
+nix-env -qa valgrind
 nix-env -qa hugo
 ```
 
