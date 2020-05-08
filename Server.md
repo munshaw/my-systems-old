@@ -135,6 +135,8 @@ I choose to run znc on port 7000, and keep the rest at the defaults. znc can be 
 
 ## Backup
 
+Backup/restore the following directories `/home/pi/html`, `/home/znc-admin/znc/`, plus any other important files in `/home/pi`.
+
 The Gitea server can be backed up with
 
 ```
