@@ -151,9 +151,9 @@ Finally I installed [vscode](https://code.visualstudio.com/). I installed Code S
 Since my ISP does not allow hairpinning, we can add the local server IP to `/etc/hosts`. Generate SSh keys with `ssh-keygen -t ed25519`, and install them onto the server with `ssh-copy-id <server>`. Password authentification can then be removed on the server in `/etc/ssh/sshd_config`. To make sure ssh logs into the user `pi` automatically, add the following to `~/.ssh/config`
 
 ```
-Host raspberrypi
+Host <server/alias>
     HostName <server>
     User pi
 ```
 
-Now you can log in with `ssh raspberrypi`.
+Now you can log in with `ssh <server/alias>`.
