@@ -125,7 +125,7 @@ nix-env -i texlive-combined-full-2019
 nix-env -i hugo-0.69.0
 ```
 
-Finally I installed [vscode](https://code.visualstudio.com/). I installed Code Spell Checker, Todo Tree, Rewrap, Simple GHC, Brittany, Haskell Linter, and markdownlint. My `settings.json` look like this
+Finally I installed [vscode](https://code.visualstudio.com/). I installed Code Spell Checker, Todo Tree, Rewrap, Simple GHC, Brittany, Haskell Linter, Better TOML, and markdownlint. My `settings.json` look like this
 
 ```
 {
