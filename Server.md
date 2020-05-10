@@ -144,12 +144,9 @@ The Gitea server can be backed up with
 ```
 sudo su
 cd /var/lib/gitea/
-su git
-gitea dump -c /etc/gitea/app.ini
-exit
+su git -c "gitea dump -c /etc/gitea/app.ini"
 mv git*.zip /home/pi
 chown pi /home/pi/git*.zip
-exit
 ```
 
 Restoring the Gitea backup after unzipping looks something like
