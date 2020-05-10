@@ -135,7 +135,7 @@ I choose to run znc on port 7000, and keep the rest at the defaults. znc can be 
 
 ## Backup
 
-Backup/restore the following directories `/home/pi/html`, `/home/znc-admin/znc/`, plus any other important files in `/home/pi`.
+I created a backup script to put everything that needs to be backed up in `/home/pi`, which is then remotely copied to my pendrive. First backup `/home/pi/html`, `/home/znc-admin/.znc/`, plus any other important files in `/home/pi`.
 
 The Gitea server can be backed up with
 
@@ -150,7 +150,7 @@ chown pi /home/pi/git*.zip
 exit
 ```
 
-Restoring the backup after unzipping looks something like
+Restoring the Gitea backup after unzipping looks something like
 
 ```
 sudo su
