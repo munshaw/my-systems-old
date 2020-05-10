@@ -133,6 +133,8 @@ znc --makeconf
 
 I choose to run znc on port 7000, and keep the rest at the defaults. znc can be accessed via SSH tunnel with `ssh -L 7000:localhost:7000 <user>@<server>`. Log into the web interface at `http://localhost:7000`, or log into `localhost:7000` via irc client.
 
+To autostart, add `@reboot su znc-admin -c znc` to `sudo crontab -e`.
+
 ## Backup
 
 I created a backup script to put everything that needs to be backed up in `/home/pi`, which is then remotely copied to my pendrive. First backup `/home/pi/html`, `/home/znc-admin/.znc/`, plus any other important files in `/home/pi`.
