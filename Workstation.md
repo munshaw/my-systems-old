@@ -82,7 +82,7 @@ sudo apt install vim
 sudo apt install mc
 sudo apt install fonts-hack fonts-firacode fonts-linuxlibertine
 sudo apt install irssi
-sudo apt install python-pygments # For latex minted package
+sudo apt install python-pygments texlive-latex-extra
 sudo apt install htop
 ```
 
