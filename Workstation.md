@@ -68,6 +68,7 @@ gnome web
 hexchat
 filezilla
 ghostwriter
+virtualbox
 ```
 
 And the follwoing from the command line
