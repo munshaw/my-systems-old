@@ -68,7 +68,6 @@ gnome web
 hexchat
 filezilla
 ghostwriter
-gnome boxes
 virtual machine manager
 ```
 
