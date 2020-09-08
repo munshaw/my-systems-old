@@ -55,15 +55,15 @@ Then I installed the following from Software (\* = flatpak)
 krita
 gimp
 inkscape
-blender*    # For 2.8
+blender*
 audacity
-musescore*  # For 3
-mpv         # Set as default Video player
+musescore*
+mpv
 obs
 pdfsam basic
 hardinfo
 wxmaxima
-geogebra*   # Run with `flatpak run org.geogebra.GeoGebra`
+geogebra*
 gnome web
 hexchat
 filezilla
