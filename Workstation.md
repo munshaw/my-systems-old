@@ -69,6 +69,7 @@ hexchat
 filezilla
 ghostwriter
 gnome boxes
+virtual machine manager
 ```
 
 And the follwoing from the command line
