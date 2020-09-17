@@ -68,7 +68,7 @@ gnome web
 hexchat
 filezilla
 ghostwriter
-virtual machine manager
+virtual machine manager (apt install spice-client-gtk)
 ```
 
 And the follwoing from the command line
