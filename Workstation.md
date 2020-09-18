@@ -69,6 +69,7 @@ hexchat
 filezilla
 ghostwriter
 virtual machine manager
+dia
 ```
 
 And the follwoing from the command line
