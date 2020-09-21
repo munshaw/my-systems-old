@@ -86,7 +86,6 @@ sudo apt install fonts-hack fonts-firacode fonts-linuxlibertine
 sudo apt install irssi
 sudo apt install python-pygments texlive-full
 sudo apt install htop
-sudo apt install lxde
 ```
 
 I also downloaded the desktop version of [Language Tool](https://languagetool.org/), and downloaded the [Hemminway Editor](http://www.hemingwayapp.com/) (with firefox) to help with my writting.
