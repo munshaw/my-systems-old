@@ -90,6 +90,15 @@ sudo apt install htop
 
 I also downloaded the desktop version of [Language Tool](https://languagetool.org/), and downloaded the [Hemminway Editor](http://www.hemingwayapp.com/) (with firefox) to help with my writting.
 
+## Windows VM
+Here's what I put on my Virtual Machine for right now.
+[Windows 10](https://www.microsoft.com/en-ca/software-download/windows10ISO)
+[VirtIO](https://docs.fedoraproject.org/en-US/quick-docs/creating-windows-virtual-machines-using-virtio-drivers/index.html)
+[7-Zip](https://www.7-zip.org/)
+[Dropbox](https://www.dropbox.com/?_hp=c)
+[KeePassXC](https://keepassxc.org/)
+[Visual Studio](https://visualstudio.microsoft.com/vs/community/)
+
 ## Development stuff
 
 I don't have any Rust projects going on, so this section is mostly focused on Haskell for now. For Ghcup dependancies, install `sudo apt install libgmp-dev libffi-dev libncurses-dev libtinfo5`. Then I Installed [Nix package manager](https://nixos.org/nix/), [Rust](https://rustup.rs/), [Stack](https://haskellstack.org), and [Ghcup](https://haskell.org/ghcup/). I rebooted here to add everything into my PATH. Then upgraded GHC to latest version with
