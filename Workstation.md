@@ -58,6 +58,8 @@ inkscape
 blender*
 audacity
 musescore*
+manuskript
+devhelp
 mpv
 obs
 pdfsam basic
