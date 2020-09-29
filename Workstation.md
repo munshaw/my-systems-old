@@ -59,6 +59,7 @@ blender*
 audacity
 musescore*
 manuskript
+thunderbird
 devhelp
 mpv
 obs
