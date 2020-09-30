@@ -78,6 +78,7 @@ dia
 And the follwoing from the command line
 
 ```
+sudo apt install ssh
 sudo apt install build-essential
 sudo apt install net-tools
 sudo apt install curl
