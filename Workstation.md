@@ -99,8 +99,6 @@ Here's what I put on my Virtual Machine for right now.
 [Windows 10](https://www.microsoft.com/en-ca/software-download/windows10ISO)
 [VirtIO](https://docs.fedoraproject.org/en-US/quick-docs/creating-windows-virtual-machines-using-virtio-drivers/index.html)
 [7-Zip](https://www.7-zip.org/)
-[Dropbox](https://www.dropbox.com/?_hp=c)
-[KeePassXC](https://keepassxc.org/)
 [Visual Studio](https://visualstudio.microsoft.com/vs/community/)
 
 ## Development stuff
