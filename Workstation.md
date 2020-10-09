@@ -96,10 +96,11 @@ I also downloaded the desktop version of [Language Tool](https://languagetool.or
 
 ## Windows VM
 Here's what I put on my Virtual Machine for right now.
-[Windows 10](https://www.microsoft.com/en-ca/software-download/windows10ISO)
+[Windows 10 Pro](https://www.microsoft.com/en-ca/software-download/windows10ISO)
 [VirtIO](https://docs.fedoraproject.org/en-US/quick-docs/creating-windows-virtual-machines-using-virtio-drivers/index.html)
 [7-Zip](https://www.7-zip.org/)
 [Visual Studio](https://visualstudio.microsoft.com/vs/community/)
+Installed OpenSSH Server (Settings -> Optional Features).
 
 ## Development stuff
 
