@@ -92,7 +92,7 @@ sudo apt install python-pygments texlive-full
 sudo apt install htop
 ```
 
-I also downloaded the desktop version of [Language Tool](https://languagetool.org/), and downloaded the [Hemminway Editor](http://www.hemingwayapp.com/) (with firefox) to help with my writting.
+I downloaded the desktop version of [Language Tool](https://languagetool.org/), as well as the [Hemminway Editor](http://www.hemingwayapp.com/) (filefox download + installed as app with Gnome Web) to help with writting. I installed the [English Dictionaries](https://extensions.libreoffice.org/en/extensions/show/english-dictionaries) extention into LibreOffice.
 
 ## Windows VM
 Here's what I put on my Virtual Machine for right now.
