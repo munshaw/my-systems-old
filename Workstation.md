@@ -100,7 +100,7 @@ Here's what I put on my Virtual Machine for right now.
 [VirtIO](https://docs.fedoraproject.org/en-US/quick-docs/creating-windows-virtual-machines-using-virtio-drivers/index.html)
 [7-Zip](https://www.7-zip.org/)
 [Visual Studio](https://visualstudio.microsoft.com/vs/community/)
-Installed OpenSSH Server (Settings -> Optional Features). Enable it in Computer Management.
+Installed OpenSSH Server (Settings -> Optional Features). Enable it in Computer Management. If you need a windows boot USB, use [WoeUSB](https://github.com/WoeUSB/WoeUSB).
 
 ## Development stuff
 
