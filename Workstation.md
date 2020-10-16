@@ -73,6 +73,8 @@ filezilla
 ghostwriter
 virtual machine manager
 dia
+builder
+glade
 ```
 
 And the follwoing from the command line
