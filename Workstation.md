@@ -96,6 +96,10 @@ sudo apt install htop
 
 I downloaded the desktop version of [Language Tool](https://languagetool.org/), as well as the [Hemminway Editor](http://www.hemingwayapp.com/) (filefox download + installed as app with Gnome Web) to help with writting. I installed the [English Dictionaries](https://extensions.libreoffice.org/en/extensions/show/english-dictionaries) extention into LibreOffice.
 
+## Mycroft
+
+(Mycroft)[https://mycroft.ai/] is an open source aritifial intellegence voice assistent. It's a fun gadget to compete with Cortana.
+
 ## Some Tweaks
 To freshen up the desktop from time to time, I use the [PlingStore](https://www.pling.com/). I'm currently using the Orchis theme.
 
