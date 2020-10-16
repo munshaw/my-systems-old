@@ -75,6 +75,7 @@ virtual machine manager
 dia
 builder
 glade
+Hide Top Bar
 ```
 
 And the follwoing from the command line
@@ -98,7 +99,7 @@ I downloaded the desktop version of [Language Tool](https://languagetool.org/), 
 
 ## Mycroft
 
-(Mycroft)[https://mycroft.ai/] is an open source aritifial intellegence voice assistent. It's a fun gadget to compete with Cortana.
+(Mycroft)[https://mycroft.ai/] is an open source aritifial intellegence voice assistent. It's a fun gadget to compete with Cortana. Install the Mycroft Gnome extention.
 
 ## Some Tweaks
 To freshen up the desktop from time to time, I use the [PlingStore](https://www.pling.com/). I'm currently using the Orchis theme.
