@@ -81,6 +81,7 @@ Hide Top Bar
 And the follwoing from the command line
 
 ```
+sudo apt install libreoffice
 sudo apt install ssh
 sudo apt install build-essential
 sudo apt install net-tools
