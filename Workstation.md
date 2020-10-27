@@ -52,6 +52,7 @@ reboot
 Then I installed the following from Software (\* = flatpak)
 
 ```
+octave
 krita
 gimp
 inkscape
