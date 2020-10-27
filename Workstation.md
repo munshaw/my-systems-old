@@ -76,7 +76,6 @@ virtual machine manager
 dia
 builder
 glade
-Hide Top Bar
 ```
 
 And the follwoing from the command line
