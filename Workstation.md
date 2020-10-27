@@ -41,7 +41,7 @@ In Tweaks, improve font rendering with Slight Hinting and Standard Antialiasing.
 
 ## Install some software
 
-I installed flatpak for software where I wanted the latest version/
+I installed flatpak for software where I wanted the latest version.
 
 ```
 sudo apt install flatpak gnome-software-plugin-flatpak
@@ -98,11 +98,8 @@ sudo apt install htop
 
 I downloaded the desktop version of [Language Tool](https://languagetool.org/), as well as the [Hemminway Editor](http://www.hemingwayapp.com/) (filefox download + installed as app with Gnome Web) to help with writting. I installed the [English Dictionaries](https://extensions.libreoffice.org/en/extensions/show/english-dictionaries) extention into LibreOffice.
 
-## Mycroft
-
 (Mycroft)[https://mycroft.ai/] is an open source aritifial intellegence voice assistent. It's a fun gadget to compete with Cortana. Install the Mycroft Gnome extention.
 
-## Some Tweaks
 To freshen up the desktop from time to time, I use the [PlingStore](https://www.pling.com/). I'm currently using the Orchis theme.
 
 ## Windows VM
@@ -114,6 +111,8 @@ Here's what I put on my Virtual Machine for right now.
 Installed OpenSSH Server (Settings -> Optional Features). Enable it in Computer Management. If you need a windows boot USB, use [WoeUSB](https://github.com/WoeUSB/WoeUSB).
 
 ## Development stuff
+
+I installed [RStudo](https://rstudio.com/products/rstudio/) for statistics projects.
 
 I don't have any Rust projects going on, so this section is mostly focused on Haskell for now. For Ghcup dependancies, install `sudo apt install libgmp-dev libffi-dev libncurses-dev libtinfo5`. Then I Installed [Nix package manager](https://nixos.org/nix/), [Rust](https://rustup.rs/), [Stack](https://haskellstack.org), and [Ghcup](https://haskell.org/ghcup/). I rebooted here to add everything into my PATH. Then upgraded GHC to latest version with
 
