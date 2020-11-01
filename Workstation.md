@@ -76,6 +76,7 @@ virtual machine manager
 dia
 builder
 glade
+chromium
 ```
 
 And the follwoing from the command line
