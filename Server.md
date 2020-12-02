@@ -120,24 +120,9 @@ sudo chmod 750 /etc/gitea
 sudo chmod 640 /etc/gitea/app.ini
 ```
 
-## IRC
-
-I installed the IRC bouncer znc with `sudo apt install znc`. Add the znc-admin user and use it to generate the configuration with
-
-```
-sudo adduser znc-admin
-sudo su
-su znc-admin
-znc --makeconf
-```
-
-I choose to run znc on port 7000, and keep the rest at the defaults. znc can be accessed via SSH tunnel with `ssh -L 7000:localhost:7000 <user>@<server>`. Log into the web interface at `http://localhost:7000`, or log into `localhost:7000` via irc client.
-
-To autostart, add `@reboot su znc-admin -c znc` to `sudo crontab -e`.
-
 ## Backup
 
-I created a backup script to put everything that needs to be backed up in `/home/pi`, which is then remotely copied to my pendrive. First backup `/home/pi/html`, `/home/znc-admin/.znc/`, plus any other important files in `/home/pi`.
+I created a backup script to put everything that needs to be backed up in `/home/pi`, which is then remotely copied to my pendrive. First backup `/home/pi/html`, plus any other important files in `/home/pi`.
 
 The Gitea server can be backed up with
 
