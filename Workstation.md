@@ -43,7 +43,6 @@ Then, I installed KeePassXC and Dropbox from Software, so I could log into other
 Then I installed the following from Pop Store. 
 
 ```
-tweaks
 octave
 scribus
 krita
