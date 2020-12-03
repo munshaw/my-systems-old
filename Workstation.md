@@ -69,6 +69,7 @@ dia
 builder
 glade
 chromium
+vscode
 ```
 
 And the follwoing from the command line
@@ -133,8 +134,7 @@ nix-env -i clang-wrapper-9.0.1
 nix-env -i texlive-combined-full-2019
 nix-env -i hugo-0.69.0
 ```
-
-Finally I installed [vscode](https://code.visualstudio.com/). I installed Code Spell Checker, Todo Tree, Rewrap, Simple GHC, Brittany, Haskell Linter, Better TOML, and markdownlint. My `settings.json` look like this
+I installed Code Spell Checker, Todo Tree, Rewrap, Simple GHC, Brittany, Haskell Linter, Better TOML, and markdownlint to vscode. My `settings.json` look like this
 
 ```
 {
