@@ -1,82 +1,70 @@
-# Pop!_OS migration
-
-Downloaded [Pop!_OS 20.10](https://pop.system76.com/).
-
 # Workstation setup
 
-These are notes for tracking how to reproduce my workstation. The target audience is me, so it may not be easy to read (use the [Debian Installation Guide](https://www.debian.org/releases/stable/amd64/) instead). Applications that don't relate to programming, mathematics, multimedia and the system aren't included in here.
+These are notes for tracking how to reproduce my workstation. The target audience is me, so it may not be easy to read. Applications that don't relate to programming, mathematics, multimedia and the system aren't included in here.
 
-## Install Debian Buster
+## Install Pop!_Os
 
-I used the [Debian 10.3.0 amd64 netinst /w non-free firmware](https://cdimage.debian.org/cdimage/unofficial/non-free/cd-including-firmware/10.3.0+nonfree/amd64/iso-cd/) image for installation. The image was written to a USB stick using Gnome Disks. To avoid graphical bugs, I booted the USB straight from the graphical bios setup to give it a better video buffer. Debian was installed with the Gnome Desktop and LVM+encryption.
+First I installed Windows, as some software I need for school cannot be ran in a virtual machine. Then, I installed [Pop!_OS 20.10](https://pop.system76.com/), with a btrfs filesystem.
 
-## Backported kernel (graphics firmware)
+## Timeshift
 
-I booted into recovery mode from GRUB, and connected to ethernet with `systemctl start NetworkManager-wait-online`. Then, I edited `/etc/apt/sources.list` to include the following sources
-
-```
-# For backported linux kernel
-deb <server> buster-backports main
-deb-src <server> buster-backports main
-```
-
-A backported kernel and firmware was installed with
+The first thing I did with the system was set up backups with timeshift. I installed Timeshift from the Pop store, and created the `@` and `@home` subvolumes.
 
 ```
-apt update
-apt upgrade
-apt -t buster-backports install linux-image-amd64 firmware-amd-graphics amd64-microcode
-reboot
+sudo btrfs sub snapshot / /@
+sudo btrfs sub cr /@home
+sudo vi /etc/fstab
+# Added `subvol=@ option` to `/` mount point.
+# Created `/home` mount point with option `subvol=@home`.
+sudo vi /boot/efi/loader/entries/Pop_OS-current.conf
+# Added `rootflags=subvol=@` to end of options.
 ```
+
+Upon rebooting, press Ctrl-Alt-F2 and create `/home/<username>` directory. Now we can create backups in timeshift.
+
+## Settings related to the server
+
+Since my ISP does not allow hairpinning, we can add the local server IP to `/etc/hosts`. Generate SSh keys with `ssh-keygen -t ed25519`, and install them onto the server with `ssh-copy-id <server>`. Password authentification can then be removed on the server in `/etc/ssh/sshd_config`. To make sure ssh logs into the user `pi` automatically, add the following to `~/.ssh/config`
+
+```
+Host <server/alias>
+    HostName <server>
+    User pi
+```
+
+Now you can log in with `ssh <server/alias>`. Also note that the local computer name and ip address can be set within gnome settings.
 
 ## First steps
 
-I added main users to sudoers with `gpasswd -a brandon sudo`. Then, I installed KeePassXC and Dropbox from Software, so I could log into other services. On Firefox, I installed HTTPS Everywhere, Privacy Badger, Clear Cache, DuckDuckGo, and Grammarly. A simple firewall is set up with
-
-```
-sudo apt install ufw
-reboot
-sudo ufw enable
-sudo ufw default deny incoming
-sudo ufw default allow outgoing
-```
-
-In Tweaks, improve font rendering with Slight Hinting and Standard Antialiasing. Enable Launch new instance. In settings I assigned a static IP and manually set my DNS (google: 8.8.8.8,8.8.4.4, cloudflare: 1.1.1.1,1.0.0.1). Also, up the Blank screen time to 15 minutes in Power.
+Then, I installed KeePassXC and Dropbox from Software, so I could log into other services. On Firefox, I installed HTTPS Everywhere, Privacy Badger, Clear Cache, DuckDuckGo, and Grammarly. A simple firewall is set up with gufw from the pop store. In settings I assigned a static IP and manually set my DNS (google: 8.8.8.8,8.8.4.4, cloudflare: 1.1.1.1,1.0.0.1). Also, up the Blank screen time to 15 minutes in Power.
 
 ## Install some software
 
-I installed flatpak for software where I wanted the latest version.
+Then I installed the following from Pop Store. 
 
 ```
-sudo apt install flatpak gnome-software-plugin-flatpak
-sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
-reboot
-```
-
-Then I installed the following from Software (\* = flatpak)
-
-```
+tweaks
 octave
+scribus
 krita
 gimp
 inkscape
-blender*
+blender
 audacity
-musescore*
+cheese
+musescore
 manuskript
 thunderbird
 devhelp
 mpv
+vlc
 obs
-pdfsam basic
+pdf arranger
 hardinfo
 wxmaxima
-geogebra*
+geogebra
 gnome web
-hexchat
 filezilla
-ghostwriter
-virtual machine manager
 dia
 builder
 glade
@@ -87,18 +75,12 @@ And the follwoing from the command line
 
 ```
 sudo apt install libreoffice
+sudo apt install gimp
 sudo apt install ssh
-sudo apt install build-essential
-sudo apt install net-tools
-sudo apt install curl
-sudo apt install git
 sudo apt install tmux
-sudo apt install vim
-sudo apt install mc
 sudo apt install fonts-hack fonts-firacode fonts-linuxlibertine
-sudo apt install irssi
 sudo apt install python-pygments
-sudo apt install htop
+sudo apt install bashtop
 sudo apt install mesa-utils
 ```
 
@@ -172,15 +154,3 @@ Finally I installed [vscode](https://code.visualstudio.com/). I installed Code S
     },
 }
 ```
-
-## Settings related to the server
-
-Since my ISP does not allow hairpinning, we can add the local server IP to `/etc/hosts`. Generate SSh keys with `ssh-keygen -t ed25519`, and install them onto the server with `ssh-copy-id <server>`. Password authentification can then be removed on the server in `/etc/ssh/sshd_config`. To make sure ssh logs into the user `pi` automatically, add the following to `~/.ssh/config`
-
-```
-Host <server/alias>
-    HostName <server>
-    User pi
-```
-
-Now you can log in with `ssh <server/alias>`.
