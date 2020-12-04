@@ -144,7 +144,6 @@ I installed Code Spell Checker, Todo Tree, Rewrap, Simple GHC, Brittany, Haskell
     "editor.fontLigatures": true,
     "editor.wordWrap": "wordWrapColumn",
     "rewrap.autoWrap.enabled": true,
-    "editor.minimap.enabled": false,
     "rewrap.wrappingColumn": 80,
     "editor.rulers": [80]
 }
