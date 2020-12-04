@@ -70,11 +70,13 @@ glade
 chromium
 vscode
 virtualbox
+tweaks
 ```
 
 And the follwoing from the command line
 
 ```
+sudo apt install gnome-shell-extensions
 sudo apt install libreoffice
 sudo apt install gimp
 sudo apt install ssh
