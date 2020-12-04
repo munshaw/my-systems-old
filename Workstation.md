@@ -18,6 +18,8 @@ sudo vi /etc/fstab
 # Created `/home` mount point with option `subvol=@home`.
 sudo vi /boot/efi/loader/entries/Pop_OS-current.conf
 # Added `rootflags=subvol=@` to end of options.
+sudo vi /etc/kernelstub/configuration
+# Added `rootflags=subvol=@` to kernel options.
 ```
 
 Upon rebooting, press Ctrl-Alt-F2 and create `/home/<username>` directory. Now we can create backups in timeshift.
