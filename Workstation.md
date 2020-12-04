@@ -72,6 +72,7 @@ glade
 chromium
 vscode
 virtualbox
+lmms
 ```
 
 And the follwoing from the command line
