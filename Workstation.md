@@ -138,18 +138,14 @@ I installed Code Spell Checker, Todo Tree, Rewrap, Simple GHC, Brittany, Haskell
 ```
 {
     "window.menuBarVisibility": "toggle",
+    "workbench.editor.showTabs": false,
     "todo-tree.tree.showScanModeButton": false,
     "editor.fontFamily": "'Fira Code','Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
     "editor.fontLigatures": true,
     "editor.wordWrap": "wordWrapColumn",
-    "rewrap.autoWrap.enabled": false,
-    "workbench.colorTheme": "Default Light+",
+    "rewrap.autoWrap.enabled": true,
     "editor.minimap.enabled": false,
-    "workbench.editor.showTabs": false,
-    "git.autofetch": true,
-    "editor.rulers": [80],
-    "[markdown]":{
-        "editor.wordWrap": "wordWrapColumn",
-    },
+    "rewrap.wrappingColumn": 80,
+    "editor.rulers": [80]
 }
 ```
