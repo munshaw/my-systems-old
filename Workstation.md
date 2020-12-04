@@ -70,7 +70,6 @@ glade
 chromium
 vscode
 virtualbox
-tweaks
 ```
 
 And the follwoing from the command line
