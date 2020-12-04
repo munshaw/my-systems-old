@@ -90,7 +90,6 @@ I downloaded the desktop version of [Language Tool](https://languagetool.org/), 
 ## Windows VM
 Here's what I put on my Virtual Machine for right now.
 [Windows 10 Pro](https://www.microsoft.com/en-ca/software-download/windows10ISO)
-[7-Zip](https://www.7-zip.org/)
 [Visual Studio](https://visualstudio.microsoft.com/vs/community/)
 [VSCELicence](https://github.com/beatcracker/VSCELicense)
 Installed OpenSSH Server (Settings -> Optional Features). Enable it in Computer Management. If you need a windows boot USB, use [WoeUSB](https://github.com/WoeUSB/WoeUSB).
