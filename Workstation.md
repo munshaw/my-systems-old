@@ -2,7 +2,7 @@
 
 These are notes for tracking how to reproduce my workstation. The target audience is me, so it may not be easy to read. Applications that don't relate to programming, mathematics, multimedia and the system aren't included in here.
 
-## Install Pop!_Os
+## Install Pop!_OS
 
 First I installed Windows, as some software I need for school cannot be ran in a virtual machine. Then, I installed [Pop!_OS 20.10](https://pop.system76.com/), with a btrfs filesystem.
 
@@ -78,6 +78,7 @@ lmms
 And the follwoing from the command line
 
 ```
+sudo apt install racket
 sudo apt install gnome-shell-extensions
 sudo apt install libreoffice
 sudo apt install gimp
