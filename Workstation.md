@@ -78,6 +78,7 @@ lmms
 And the follwoing from the command line
 
 ```
+sudo apt install texlive-full
 sudo apt install racket
 sudo apt install gnome-shell-extensions
 sudo apt install libreoffice
