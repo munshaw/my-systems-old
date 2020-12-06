@@ -73,6 +73,7 @@ chromium
 vscode
 virtualbox
 lmms
+godot
 ```
 
 And the follwoing from the command line
