@@ -4,7 +4,7 @@ These are notes for tracking how to reproduce my workstation. The target audienc
 
 ## Install Pop!_OS
 
-First I installed Windows, as some software I need for school cannot be ran in a virtual machine. Then, I installed [Pop!_OS 20.10](https://pop.system76.com/), with a btrfs filesystem.
+First I installed Windows, as some software I need for school cannot be ran in a virtual machine. It's also an easyway to give Blender OpenCL access. Then, I installed [Pop!_OS 20.10](https://pop.system76.com/), with a btrfs filesystem.
 
 ## Timeshift
 
@@ -95,16 +95,17 @@ I downloaded the desktop version of [Language Tool](https://languagetool.org/), 
 
 ## Windows VM
 Here's what I put on my Virtual Machine for right now.
-[Windows 10 Pro](https://www.microsoft.com/en-ca/software-download/windows10ISO)
-[Visual Studio](https://visualstudio.microsoft.com/vs/community/)
-[VSCELicence](https://github.com/beatcracker/VSCELicense)
-Installed OpenSSH Server (Settings -> Optional Features). Enable it in Computer Management. If you need a windows boot USB, use [WoeUSB](https://github.com/WoeUSB/WoeUSB).
+[Windows 10 Pro](https://www.microsoft.com/en-ca/software-download/windows10ISO),
+[Visual Studio](https://visualstudio.microsoft.com/vs/community/), and
+[VSCELicence](https://github.com/beatcracker/VSCELicense).
 
 ## Development stuff
 
 I installed [RStudo](https://rstudio.com/products/rstudio/) for statistics projects.
 
-For Rust and Haskell, I created two new user accounts with their own settings and plugins for Visual Studio, and their own toolchains installed locally.
+My default user does not have any local development environments set up, and does not have language specific extentions installed in vscode, outside of highlighting. Instead, I create a new user for every different development environment or project to keep them isolated.
+
+The rest of this section needs to be seperated into a per-user basis.
 
 I don't have any Rust projects going on, so this section is mostly focused on Haskell for now. For Ghcup dependancies, install `sudo apt install libgmp-dev libffi-dev libncurses-dev libtinfo5`. Then I Installed [Nix package manager](https://nixos.org/nix/), [Rust](https://rustup.rs/), [Stack](https://haskellstack.org), and [Ghcup](https://haskell.org/ghcup/). I rebooted here to add everything into my PATH. Then upgraded GHC to latest version with
 
