@@ -74,6 +74,7 @@ vscode
 virtualbox
 lmms
 godot
+sonic pi
 ```
 
 And the follwoing from the command line
