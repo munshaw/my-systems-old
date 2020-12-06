@@ -103,6 +103,8 @@ Installed OpenSSH Server (Settings -> Optional Features). Enable it in Computer 
 
 I installed [RStudo](https://rstudio.com/products/rstudio/) for statistics projects.
 
+For Rust and Haskell, I created two new user accounts with their own settings and plugins for Visual Studio, and their own toolchains installed locally.
+
 I don't have any Rust projects going on, so this section is mostly focused on Haskell for now. For Ghcup dependancies, install `sudo apt install libgmp-dev libffi-dev libncurses-dev libtinfo5`. Then I Installed [Nix package manager](https://nixos.org/nix/), [Rust](https://rustup.rs/), [Stack](https://haskellstack.org), and [Ghcup](https://haskell.org/ghcup/). I rebooted here to add everything into my PATH. Then upgraded GHC to latest version with
 
 ```
