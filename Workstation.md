@@ -152,6 +152,7 @@ I installed Vim, Code Spell Checker, Todo Tree, Rewrap, Simple GHC, Brittany, Ha
     "editor.wordWrap": "wordWrapColumn",
     "rewrap.autoWrap.enabled": true,
     "rewrap.wrappingColumn": 80,
-    "editor.rulers": [80]
+    "editor.rulers": [80],
+    "editor.renderIndentGuides": false
 }
 ```
