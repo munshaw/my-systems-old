@@ -74,6 +74,7 @@ virtualbox
 lmms
 godot
 sonic pi
+todo
 ```
 
 And the follwoing from the command line
