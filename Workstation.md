@@ -77,21 +77,22 @@ sonic pi
 todo
 ```
 
-And the follwoing from the command line
+And the follwoing from apt
 
 ```
-sudo apt install texlive-full
-sudo apt install racket
-sudo apt install gnome-shell-extensions
-sudo apt install libreoffice
-sudo apt install gimp
-sudo apt install ssh
-sudo apt install tmux
-sudo apt install fonts-hack fonts-firacode fonts-linuxlibertine
-sudo apt install python-pygments
-sudo apt install bashtop
-sudo apt install mesa-utils
-sudo apt install cmus
+texlive-full
+racket
+gnome-shell-extensions
+libreoffice
+gimp
+ssh
+tmux
+fonts-hack fonts-firacode fonts-linuxlibertine
+python-pygments
+bashtop
+mesa-utils
+cmus
+ubuntu-restricted-extras
 ```
 
 I downloaded the desktop version of [Language Tool](https://languagetool.org/), as well as the [Hemminway Editor](http://www.hemingwayapp.com/) (filefox download + installed as app with Gnome Web) to help with writting. I installed the [English Dictionaries](https://extensions.libreoffice.org/en/extensions/show/english-dictionaries) extention into LibreOffice.
