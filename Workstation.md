@@ -91,6 +91,7 @@ sudo apt install fonts-hack fonts-firacode fonts-linuxlibertine
 sudo apt install python-pygments
 sudo apt install bashtop
 sudo apt install mesa-utils
+sudo apt install cmus
 ```
 
 I downloaded the desktop version of [Language Tool](https://languagetool.org/), as well as the [Hemminway Editor](http://www.hemingwayapp.com/) (filefox download + installed as app with Gnome Web) to help with writting. I installed the [English Dictionaries](https://extensions.libreoffice.org/en/extensions/show/english-dictionaries) extention into LibreOffice.
