@@ -38,7 +38,7 @@ Now you can log in with `ssh <server/alias>`. Also note that the local computer 
 
 ## First steps
 
-Then, I installed KeePassXC and Dropbox from Software, so I could log into other services. On Firefox, I installed HTTPS Everywhere, Privacy Badger, Clear Cache, DuckDuckGo, Dark Reader, and Grammarly. A simple firewall is set up with gufw from the pop store. In settings I assigned a static IP and manually set my DNS (google: 8.8.8.8,8.8.4.4, cloudflare: 1.1.1.1,1.0.0.1). Also, up the Blank screen time to 15 minutes in Power.
+Then, I installed KeePassXC and Dropbox from Software, so I could log into other services. On Firefox, I installed HTTPS Everywhere, Privacy Badger, DuckDuckGo, Dark Reader, and Grammarly. A simple firewall is set up with gufw from the pop store. In settings I assigned a static IP and manually set my DNS (google: 8.8.8.8,8.8.4.4, cloudflare: 1.1.1.1,1.0.0.1). Also, up the Blank screen time to 15 minutes in Power.
 
 ## Install some software
 
@@ -66,7 +66,6 @@ wxmaxima
 geogebra
 gnome web
 filezilla
-dia
 builder
 glade
 chromium
