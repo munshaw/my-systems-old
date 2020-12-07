@@ -75,6 +75,7 @@ lmms
 godot
 sonic pi
 todo
+onlyoffice
 ```
 
 And the follwoing from apt
