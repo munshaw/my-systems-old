@@ -106,7 +106,7 @@ Here's what I put on my Virtual Machine for right now.
 
 ## Development stuff
 
-I run zero-configuration development environments on my main user account. For example: LaTeX, RStudio, Racket, Geogebra, Godot, and Octave can be installed and used without configuration. Otherwise, I create a new `$HOME` for each project. For example: Rust and Haskell both require configuration and heavy vscode extentions to work well.
+Because they behave more like apps, I run zero-configuration development environments on my main user account. For example: LaTeX, RStudio, Racket, Geogebra, Godot, and Octave. Otherwise, I create a new `$HOME` for each project. For example: Rust and Haskell both require heavy configuration and vscode extentions to work well, so they are isolated in their own containers.
 
 The rest of this section needs to be re-worked for multi-`home`.
 
