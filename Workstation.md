@@ -108,7 +108,7 @@ Here's what I put on my Virtual Machine for right now.
 
 Simple, zero-configuration development envrionments are used like any other app. For example, LaTeX, RStudio, Octave, Godot, and Racket.
 
-Complex development environments, and their vscode extentions, are isolated in seperate `$HOME` directories to avoid contamination.
+Complex development environments (and their vscode extentions) are isolated in seperate `$HOME` directories to avoid contamination.
 
 I don't have any Rust projects going on, so this section is mostly focused on Haskell for now. For Ghcup dependancies, install `sudo apt install libgmp-dev libffi-dev libncurses-dev libtinfo5`. Then I Installed [Nix package manager](https://nixos.org/nix/), [Rust](https://rustup.rs/), [Stack](https://haskellstack.org), and [Ghcup](https://haskell.org/ghcup/). I rebooted here to add everything into my PATH. Then upgraded GHC to latest version with
 
