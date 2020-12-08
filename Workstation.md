@@ -95,7 +95,7 @@ cmus
 ubuntu-restricted-extras
 ```
 
-I downloaded the desktop version of [Language Tool](https://languagetool.org/), as well as the [Hemminway Editor](http://www.hemingwayapp.com/) (filefox download + installed as app with Gnome Web) to help with writting. Finally, I installed [OnlyOffice Desktop](https://www.onlyoffice.com/desktop.aspx).
+I downloaded the desktop version of [Language Tool](https://languagetool.org/), as well as the [Hemminway Editor](http://www.hemingwayapp.com/) (filefox download + installed as app with Gnome Web) to help with writting. Finally, I installed [OnlyOffice Desktop](https://www.onlyoffice.com/desktop.aspx). For statistics, I installed [RStudo](https://rstudio.com/products/rstudio/)
 
 ## Windows VM
 
@@ -106,11 +106,9 @@ Here's what I put on my Virtual Machine for right now.
 
 ## Development stuff
 
-I do some programming on my system, and some of it isolated in containers. Here's my general rule: If the toolchain can be installed via apt, does not require additional steps for reproducability, and does not require special vscode extentions, then it can be done on the system. Every other project should be given its own container. 
+I run zero-configuration development environments on my main user account. For example: LaTeX, RStudio, Racket, Geogebra, Godot, and Octave can be installed and used without configuration. Otherwise, I create a new `$HOME` for each project. For example: Rust and Haskell both require configuration and heavy vscode extentions to work well.
 
-I installed [RStudo](https://rstudio.com/products/rstudio/) for statistics projects.
-
-The rest of this section needs to be re-worked for containers.
+The rest of this section needs to be re-worked for multi-`home`.
 
 I don't have any Rust projects going on, so this section is mostly focused on Haskell for now. For Ghcup dependancies, install `sudo apt install libgmp-dev libffi-dev libncurses-dev libtinfo5`. Then I Installed [Nix package manager](https://nixos.org/nix/), [Rust](https://rustup.rs/), [Stack](https://haskellstack.org), and [Ghcup](https://haskell.org/ghcup/). I rebooted here to add everything into my PATH. Then upgraded GHC to latest version with
 
