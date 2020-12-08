@@ -106,7 +106,7 @@ Here's what I put on my Virtual Machine for right now.
 
 ## Development stuff
 
-Simple, zero-configuration development envrionments are used like any other app. For example, LaTeX, RStudio, Octave, Godot, and Racket.
+Zero-configuration development envrionments are used like any other app. For example, LaTeX, RStudio, Octave, Godot, and Racket.
 
 Complex development environments (and their vscode extentions) are isolated in seperate `$HOME` directories to avoid contamination.
 
