@@ -82,13 +82,13 @@ And the follwoing from apt
 
 ```
 texlive-full
+python-pygments
 racket
 gnome-shell-extensions
 gimp
 ssh
 tmux
 fonts-hack fonts-firacode fonts-linuxlibertine
-python-pygments
 bashtop
 mesa-utils
 cmus
@@ -106,9 +106,9 @@ Here's what I put on my Virtual Machine for right now.
 
 ## Development stuff
 
-Because they behave more like apps, I run zero-configuration development environments on my main user account. For example: LaTeX, RStudio, Racket, Geogebra, Godot, and Octave. Otherwise, I create a new `$HOME` for each project. For example: Rust and Haskell both require heavy configuration and vscode extentions to work well, so they are isolated in their own containers.
+Simple, zero-configuration development envrionments are used like any other app. For example, LaTeX, RStudio, Octave, Godot, and Racket.
 
-The rest of this section needs to be re-worked for multi-`home`.
+Complex development environments, and their vscode extentions, are isolated in seperate `$HOME` directories to avoid contamination.
 
 I don't have any Rust projects going on, so this section is mostly focused on Haskell for now. For Ghcup dependancies, install `sudo apt install libgmp-dev libffi-dev libncurses-dev libtinfo5`. Then I Installed [Nix package manager](https://nixos.org/nix/), [Rust](https://rustup.rs/), [Stack](https://haskellstack.org), and [Ghcup](https://haskell.org/ghcup/). I rebooted here to add everything into my PATH. Then upgraded GHC to latest version with
 
