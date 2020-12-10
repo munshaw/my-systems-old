@@ -76,6 +76,7 @@ godot
 sonic pi
 todo
 onlyoffice
+libresprite
 ```
 
 And the follwoing from apt
