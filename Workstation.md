@@ -94,6 +94,7 @@ bashtop
 mesa-utils
 cmus
 ubuntu-restricted-extras
+espeak-ng mbrola mbrola-en1 mbrola-us1
 ```
 
 I downloaded the desktop version of [Language Tool](https://languagetool.org/), as well as the [Hemminway Editor](http://www.hemingwayapp.com/) (filefox download + installed as app with Gnome Web) to help with writting. Finally, I installed [OnlyOffice Desktop](https://www.onlyoffice.com/desktop.aspx). For statistics, I installed [RStudo](https://rstudio.com/products/rstudio/)
