@@ -42,7 +42,7 @@ Then, I installed KeePassXC and Dropbox from Software, so I could log into other
 
 ## Install some software
 
-Then I installed the following from Pop Store. 
+Then I installed the following from Pop Shop:
 
 ```
 octave
@@ -79,7 +79,7 @@ onlyoffice
 libresprite
 ```
 
-And the follwoing from apt
+The following from apt:
 
 ```
 texlive-full
@@ -97,7 +97,14 @@ ubuntu-restricted-extras
 espeak-ng mbrola mbrola-en* mbrola-us*
 ```
 
-I downloaded the desktop version of [Language Tool](https://languagetool.org/), as well as the [Hemminway Editor](http://www.hemingwayapp.com/) (filefox download + installed as app with Gnome Web) to help with writting. Finally, I installed [OnlyOffice Desktop](https://www.onlyoffice.com/desktop.aspx). For statistics, I installed [RStudo](https://rstudio.com/products/rstudio/)
+The following from the internet: 
+
+```
+[OnlyOffice](https://www.onlyoffice.com/)
+[Language Tool](https://languagetool.org/)
+[Hemminway Editor](http://www.hemingwayapp.com/) (filefox download + installed as app with Gnome Web)
+[RStudo](https://rstudio.com/products/rstudio/)]
+```
 
 ## Windows VM
 
