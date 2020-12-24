@@ -105,13 +105,15 @@ The following from the internet:
 
 [Hemminway Editor](http://www.hemingwayapp.com/) (filefox download + installed as app with Gnome Web)
 
-[RStudo](https://rstudio.com/products/rstudio/)]
+[RStudo](https://rstudio.com/products/rstudio/)
 
 ## Windows VM
 
 Here's what I put on my Virtual Machine for right now.
 [Windows 10 Pro](https://www.microsoft.com/en-ca/software-download/windows10ISO),
+
 [Visual Studio](https://visualstudio.microsoft.com/vs/community/), and
+
 [VSCELicence](https://github.com/beatcracker/VSCELicense).
 
 ## Development stuff
