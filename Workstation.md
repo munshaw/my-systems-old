@@ -133,6 +133,7 @@ In vscode, I installed Vim, Code Spell Checker, Todo Tree, Rewrap, LaTeX worksho
     "workbench.activityBar.visible": true,
     "editor.renderIndentGuides": false
 }
+```
 
 ### Generic Development Envrionments
 
