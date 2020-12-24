@@ -114,7 +114,7 @@ Here's what I put on my Virtual Machine for right now.
 
 ## Development stuff
 
-Zero-configuration development envrionments are used like any other app. For example, LaTeX, RStudio, Octave, Godot, and Racket. Complex development environments (and their vscode extentions) are isolated in seperate `$HOME` directories to avoid contamination.
+Zero-configuration development envrionments are used like any other app. For example, LaTeX, RStudio, Octave, Godot, and Racket. As long as they don't require additional dependancies, they do not need to be isolated. Complex development environments (and their vscode extentions) are isolated in seperate `$HOME` directories to avoid contamination.
 
 In vscode, I installed Vim, Code Spell Checker, Todo Tree, Rewrap, LaTeX workshop, and markdownlint to vscode. My `settings.json` look like this
 
