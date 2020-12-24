@@ -100,8 +100,11 @@ espeak-ng mbrola mbrola-en* mbrola-us*
 The following from the internet: 
 
 [OnlyOffice](https://www.onlyoffice.com/)
+
 [Language Tool](https://languagetool.org/)
+
 [Hemminway Editor](http://www.hemingwayapp.com/) (filefox download + installed as app with Gnome Web)
+
 [RStudo](https://rstudio.com/products/rstudio/)]
 
 ## Windows VM
