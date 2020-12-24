@@ -115,9 +115,26 @@ Here's what I put on my Virtual Machine for right now.
 
 ## Development stuff
 
-Zero-configuration development envrionments are used like any other app. For example, LaTeX, RStudio, Octave, Godot, and Racket.
+Zero-configuration development envrionments are used like any other app. For example, LaTeX, RStudio, Octave, Godot, and Racket. Complex development environments (and their vscode extentions) are isolated in seperate `$HOME` directories to avoid contamination.
 
-Complex development environments (and their vscode extentions) are isolated in seperate `$HOME` directories to avoid contamination.
+In vscode, I installed Vim, Code Spell Checker, Todo Tree, Rewrap, LaTeX workshop, and markdownlint to vscode. My `settings.json` look like this
+
+```
+{
+    "window.menuBarVisibility": "toggle",
+    "workbench.editor.showTabs": false,
+    "todo-tree.tree.showScanModeButton": false,
+    "editor.fontFamily": "'Fira Code','Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
+    "editor.fontLigatures": true,
+    "editor.wordWrap": "wordWrapColumn",
+    "rewrap.autoWrap.enabled": true,
+    "rewrap.wrappingColumn": 80,
+    //"editor.rulers": [80],
+    "workbench.activityBar.visible": true,
+    "editor.renderIndentGuides": false
+}
+
+### Generic Development Envrionments
 
 I don't have any Rust projects going on, so this section is mostly focused on Haskell for now. For Ghcup dependancies, install `sudo apt install libgmp-dev libffi-dev libncurses-dev libtinfo5`. Then I Installed [Nix package manager](https://nixos.org/nix/), [Rust](https://rustup.rs/), [Stack](https://haskellstack.org), and [Ghcup](https://haskell.org/ghcup/). I rebooted here to add everything into my PATH. Then upgraded GHC to latest version with
 
@@ -152,21 +169,4 @@ nix-env -i llvm-9.0.1
 nix-env -i clang-wrapper-9.0.1
 nix-env -i texlive-combined-full-2019
 nix-env -i hugo-0.69.0
-```
-I installed Vim, Code Spell Checker, Todo Tree, Rewrap, Simple GHC, Brittany, Haskell Linter, Better TOML, and markdownlint to vscode. My `settings.json` look like this
-
-```
-{
-    "window.menuBarVisibility": "toggle",
-    "workbench.editor.showTabs": false,
-    "todo-tree.tree.showScanModeButton": false,
-    "editor.fontFamily": "'Fira Code','Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
-    "editor.fontLigatures": true,
-    "editor.wordWrap": "wordWrapColumn",
-    "rewrap.autoWrap.enabled": true,
-    "rewrap.wrappingColumn": 80,
-    //"editor.rulers": [80],
-    "workbench.activityBar.visible": true,
-    "editor.renderIndentGuides": false
-}
 ```
