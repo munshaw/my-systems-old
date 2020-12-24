@@ -99,22 +99,18 @@ espeak-ng mbrola mbrola-en* mbrola-us*
 
 The following from the internet: 
 
-[OnlyOffice](https://www.onlyoffice.com/)
-
-[Language Tool](https://languagetool.org/)
-
-[Hemminway Editor](http://www.hemingwayapp.com/) (filefox download + installed as app with Gnome Web)
-
-[RStudo](https://rstudio.com/products/rstudio/)
+* [OnlyOffice](https://www.onlyoffice.com/)
+* [Language Tool](https://languagetool.org/)
+* [Hemminway Editor](http://www.hemingwayapp.com/) (filefox download + installed as app with Gnome Web)
+* [RStudo](https://rstudio.com/products/rstudio/)
 
 ## Windows VM
 
 Here's what I put on my Virtual Machine for right now.
-[Windows 10 Pro](https://www.microsoft.com/en-ca/software-download/windows10ISO),
 
-[Visual Studio](https://visualstudio.microsoft.com/vs/community/), and
-
-[VSCELicence](https://github.com/beatcracker/VSCELicense).
+* [Windows 10 Pro](https://www.microsoft.com/en-ca/software-download/windows10ISO)
+* [Visual Studio](https://visualstudio.microsoft.com/vs/community/)
+* [VSCELicence](https://github.com/beatcracker/VSCELicense)
 
 ## Development stuff
 
