@@ -50,7 +50,6 @@ scribus
 krita
 gimp
 inkscape
-blender
 audacity
 cheese
 musescore
@@ -103,6 +102,10 @@ The following from the internet:
 * [Language Tool](https://languagetool.org/)
 * [Hemminway Editor](http://www.hemingwayapp.com/) (filefox download + installed as app with Gnome Web)
 * [RStudo](https://rstudio.com/products/rstudio/)
+
+## Blender
+
+I installed Blender from the pop shop, and installed the [UvSquares](https://github.com/Radivarig/UvSquares) plugin.
 
 ## Windows VM
 
