@@ -65,7 +65,6 @@ filezilla
 builder
 glade
 chromium
-virtualbox
 lmms
 godot
 sonic pi
@@ -119,7 +118,7 @@ I installed Blender from the Pop! Shop, and installed the [UvSquares](https://gi
 
 ## Windows VM
 
-Here's what I put on my Virtual Machine for right now.
+I installed VirtualBox from Pop! Shop. Here's what I put on my Virtual Machine for right now.
 
 * [Windows 10 Pro](https://www.microsoft.com/en-ca/software-download/windows10ISO)
 * [Visual Studio](https://visualstudio.microsoft.com/vs/community/)
