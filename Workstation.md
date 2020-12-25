@@ -65,7 +65,6 @@ filezilla
 builder
 glade
 chromium
-vscode
 virtualbox
 lmms
 godot
@@ -86,11 +85,6 @@ mesa-utils
 cmus
 ubuntu-restricted-extras
 ```
-
-The following from the internet: 
-
-
-* [RStudo](https://rstudio.com/products/rstudio/)
 
 ## Office Software
 
@@ -135,7 +129,9 @@ Here's what I put on my Virtual Machine for right now.
 
 Zero-configuration development envrionments are used like any other app. For example, LaTeX, RStudio, Octave, Godot, and Racket. As long as they don't require additional dependancies, they do not need to be isolated. Complex development environments (and their vscode extentions) are isolated in seperate `$HOME` directories to avoid contamination.
 
-In vscode, I installed Vim, Code Spell Checker, Todo Tree, Rewrap, LaTeX workshop, and markdownlint to vscode. My `settings.json` look like this
+I installed [RStudo](https://rstudio.com/products/rstudio/) from the internet. When using external packages, create a seperate `$HOME`.
+
+I installed vscode via Pop! Shop. In vscode, I installed Vim, Code Spell Checker, Todo Tree, Rewrap, LaTeX workshop, and markdownlint to vscode. My `settings.json` look like this
 
 ```
 {
@@ -153,7 +149,7 @@ In vscode, I installed Vim, Code Spell Checker, Todo Tree, Rewrap, LaTeX worksho
 }
 ```
 
-### Generic Development Envrionments
+### TODO: Create Rust and Haskell Generic Development Environments.
 
 I don't have any Rust projects going on, so this section is mostly focused on Haskell for now. For Ghcup dependancies, install `sudo apt install libgmp-dev libffi-dev libncurses-dev libtinfo5`. Then I Installed [Nix package manager](https://nixos.org/nix/), [Rust](https://rustup.rs/), [Stack](https://haskellstack.org), and [Ghcup](https://haskell.org/ghcup/). I rebooted here to add everything into my PATH. Then upgraded GHC to latest version with
 
