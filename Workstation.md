@@ -45,7 +45,6 @@ Then, I installed KeePassXC and Dropbox from Software, so I could log into other
 Then I installed the following from Pop! Shop:
 
 ```
-octave
 krita
 gimp
 inkscape
@@ -53,7 +52,6 @@ audacity
 cheese
 musescore
 thunderbird
-devhelp
 mpv
 vlc
 obs
@@ -62,11 +60,8 @@ wxmaxima
 geogebra
 gnome web
 filezilla
-builder
-glade
 chromium
 lmms
-godot
 sonic pi
 libresprite
 ```
@@ -74,7 +69,6 @@ libresprite
 The following from apt:
 
 ```
-racket
 gnome-shell-extensions
 gimp
 ssh
@@ -130,7 +124,18 @@ Zero-configuration development envrionments are used like any other app. For exa
 
 I installed [RStudo](https://rstudio.com/products/rstudio/) from the internet. When using external packages, create a seperate `$HOME`.
 
-I installed vscode via Pop! Shop. In vscode, I installed Vim, Code Spell Checker, Todo Tree, Rewrap, LaTeX workshop, and markdownlint to vscode. My `settings.json` look like this
+I installed `racket` from apt, and from Pop! Shop I installed:
+
+```
+vscode
+octave
+devhelp
+glade
+buiilder
+godot
+```
+
+In vscode, I installed Vim, Code Spell Checker, Todo Tree, Rewrap, LaTeX workshop, and markdownlint to vscode. My `settings.json` look like this
 
 ```
 {
