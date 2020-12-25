@@ -42,24 +42,21 @@ Then, I installed KeePassXC and Dropbox from Software, so I could log into other
 
 ## Install some software
 
-Then I installed the following from Pop Shop:
+Then I installed the following from Pop! Shop:
 
 ```
 octave
-scribus
 krita
 gimp
 inkscape
 audacity
 cheese
 musescore
-manuskript
 thunderbird
 devhelp
 mpv
 vlc
 obs
-pdf arranger
 hardinfo
 wxmaxima
 geogebra
@@ -73,39 +70,58 @@ virtualbox
 lmms
 godot
 sonic pi
-todo
-onlyoffice
 libresprite
 ```
 
 The following from apt:
 
 ```
-texlive-full
-python-pygments
 racket
 gnome-shell-extensions
 gimp
 ssh
 tmux
-fonts-hack fonts-firacode fonts-linuxlibertine
 bashtop
 mesa-utils
 cmus
 ubuntu-restricted-extras
-espeak-ng mbrola mbrola-en* mbrola-us*
 ```
 
 The following from the internet: 
 
+
+* [RStudo](https://rstudio.com/products/rstudio/)
+
+## Office Software
+
+I installed the following from the internet:
+
 * [OnlyOffice](https://www.onlyoffice.com/)
 * [Language Tool](https://languagetool.org/)
 * [Hemminway Editor](http://www.hemingwayapp.com/) (filefox download + installed as app with Gnome Web)
-* [RStudo](https://rstudio.com/products/rstudio/)
+
+The following was installed via apt:
+
+```
+libreoffice
+texlive-full
+python-pygments
+fonts-hack fonts-firacode fonts-linuxlibertine
+espeak-ng mbrola mbrola-en* mbrola-us*
+```
+
+The following was installed via Pop! Shop:
+
+```
+scribus
+manuskript
+gnome todo
+pdf arranger
+```
 
 ## Blender
 
-I installed Blender from the pop shop, and installed the [UvSquares](https://github.com/Radivarig/UvSquares) plugin.
+I installed Blender from the Pop! Shop, and installed the [UvSquares](https://github.com/Radivarig/UvSquares) plugin.
 
 ## Windows VM
 
