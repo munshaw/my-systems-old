@@ -64,6 +64,7 @@ chromium
 lmms
 sonic pi
 libresprite
+jasp
 ```
 
 The following from apt:
