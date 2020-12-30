@@ -57,14 +57,12 @@ vlc
 obs
 hardinfo
 wxmaxima
-geogebra
 gnome web
 filezilla
 chromium
 lmms
 sonic pi
 libresprite
-jasp
 ```
 
 The following from apt:
@@ -119,20 +117,29 @@ I installed VirtualBox from Pop! Shop. Here's what I put on my Virtual Machine f
 * [Visual Studio](https://visualstudio.microsoft.com/vs/community/)
 * [VSCELicence](https://github.com/beatcracker/VSCELicense)
 
+## Mathematics
+
+I installed [RStudo](https://rstudio.com/products/rstudio/) from the internet.
+
+From Pop! Shop, I installed:
+
+```
+JASP
+Geogebra
+Octave
+```
+
 ## Development stuff
 
-Zero-configuration development envrionments are used like any other app. For example, LaTeX, RStudio, Octave, Godot, and Racket. As long as they don't require additional dependancies, they do not need to be isolated. Complex development environments (and their vscode extentions) are isolated in seperate `$HOME` directories to avoid contamination.
-
-I installed [RStudo](https://rstudio.com/products/rstudio/) from the internet. When using external packages, create a seperate `$HOME`.
+Zero-configuration development envrionments are used like any other app. For example, LaTeX, RStudio, Octave, Godot, and Racket. As long as they don't require additional packages, they do not need to be isolated. Complex development environments (and their vscode extentions) are isolated in seperate `$HOME` directories to avoid contamination.
 
 I installed `racket` from apt, and from Pop! Shop I installed:
 
 ```
 vscode
-octave
 devhelp
 glade
-buiilder
+builder
 godot
 neovim
 ```
