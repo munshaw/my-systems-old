@@ -124,7 +124,6 @@ I installed [RStudo](https://rstudio.com/products/rstudio/) from the internet.
 From Pop! Shop, I installed:
 
 ```
-JASP
 Geogebra
 Octave
 ```
