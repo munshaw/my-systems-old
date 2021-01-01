@@ -139,9 +139,10 @@ vscode
 devhelp
 glade
 builder
-godot
 neovim
 ```
+
+I installed `godot3` via apt.
 
 In vscode, I installed Vim, Code Spell Checker, Todo Tree, Rewrap, LaTeX workshop, and markdownlint to vscode. My `settings.json` look like this
 
