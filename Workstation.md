@@ -44,7 +44,6 @@ Create a new bashrc, and set up a simple prompt
 
 ```
 touch ~/.bashrc
-chmod +x ~/.bashrc
 vi ~/.bashrc
 ```
 
