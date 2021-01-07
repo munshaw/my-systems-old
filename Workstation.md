@@ -63,6 +63,7 @@ chromium
 lmms
 sonic pi
 libresprite
+rhythembox
 ```
 
 The following from apt:
@@ -74,7 +75,6 @@ ssh
 tmux
 bashtop
 mesa-utils
-cmus
 ubuntu-restricted-extras
 ```
 
