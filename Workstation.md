@@ -141,6 +141,8 @@ Geogebra
 Octave
 ```
 
+From apt, I installed `weka weka-doc`.
+
 ## Development stuff
 
 Zero-configuration development envrionments are used like any other app. For example, LaTeX, RStudio, Octave, Godot, and Racket. As long as they don't require additional packages, they do not need to be isolated. Complex development environments (and their vscode extentions) are isolated in seperate `$HOME` directories to avoid contamination.
