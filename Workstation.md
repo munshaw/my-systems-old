@@ -105,7 +105,7 @@ The following was installed via apt:
 libreoffice
 texlive-full
 python-pygments
-fonts-hack fonts-firacode fonts-linuxlibertine
+fonts-hack fonts-firacode ubuntustudio-fonts
 espeak-ng mbrola mbrola-en* mbrola-us*
 ```
 
