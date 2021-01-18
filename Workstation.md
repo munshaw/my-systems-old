@@ -34,7 +34,7 @@ Host <server/alias>
     User pi
 ```
 
-Now you can log in with `ssh <server/alias>`. Also note that the local computer name and ip address can be set within gnome settings.
+Create an ssh-agent with `ssh-agent bash`, and add the key `ssh-add ~/.ssh/id_ed25519`. Now you can log in with `ssh <server/alias>`. Also note that the local computer name and ip address can be set within gnome settings.
 
 ## First steps
 
