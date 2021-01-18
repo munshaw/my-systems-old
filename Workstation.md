@@ -151,6 +151,7 @@ I installed the following from apt
 ```
 racket
 godot3
+hugo
 ```
 
 From Pop! Shop I installed:
