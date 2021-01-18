@@ -147,7 +147,13 @@ From apt, I installed `weka weka-doc`.
 
 Zero-configuration development envrionments are used like any other app. For example, LaTeX, RStudio, Octave, Godot, and Racket. As long as they don't require additional packages, they do not need to be isolated. Complex development environments (and their vscode extentions) are isolated in seperate `$HOME` directories to avoid contamination.
 
-I installed `racket` from apt, and from Pop! Shop I installed:
+I installed the following from apt
+```
+racket
+godot3
+```
+
+From Pop! Shop I installed:
 
 ```
 vscode
@@ -156,8 +162,6 @@ glade
 builder
 neovim
 ```
-
-I installed `godot3` via apt.
 
 In vscode, I installed Vim, Code Spell Checker, Todo Tree, Rewrap, LaTeX workshop, and markdownlint to vscode. My `settings.json` look like this
 
