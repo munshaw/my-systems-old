@@ -176,7 +176,6 @@ In vscode, I installed Vim, Code Spell Checker, Todo Tree, Rewrap, LaTeX worksho
     "editor.wordWrap": "wordWrapColumn",
     "rewrap.autoWrap.enabled": true,
     "rewrap.wrappingColumn": 80,
-    //"editor.rulers": [80],
     "workbench.activityBar.visible": true,
     "editor.renderIndentGuides": false
 }
