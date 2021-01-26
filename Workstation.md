@@ -102,7 +102,7 @@ I installed the following from the internet:
 The following was installed via apt:
 
 ```
-libreoffice
+libreoffice libreoffice-sdbc-hsqldb
 texlive-full
 python-pygments
 fonts-hack fonts-firacode ubuntustudio-fonts
