@@ -157,28 +157,10 @@ hugo
 From Pop! Shop I installed:
 
 ```
-vscode
 devhelp
 glade
 builder
 neovim
-```
-
-In vscode, I installed Vim, Code Spell Checker, Todo Tree, Rewrap, LaTeX workshop, and markdownlint to vscode. My `settings.json` look like this
-
-```
-{
-    "window.menuBarVisibility": "toggle",
-    "workbench.editor.showTabs": false,
-    "todo-tree.tree.showScanModeButton": false,
-    "editor.fontFamily": "'Fira Code','Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
-    "editor.fontLigatures": true,
-    "editor.wordWrap": "wordWrapColumn",
-    "rewrap.autoWrap.enabled": true,
-    "rewrap.wrappingColumn": 80,
-    "workbench.activityBar.visible": true,
-    "editor.renderIndentGuides": false
-}
 ```
 
 ### TODO: Create Rust and Haskell Generic Development Environments.
