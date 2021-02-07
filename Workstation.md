@@ -95,7 +95,6 @@ ubuntu-restricted-extras
 
 I installed the following from the internet:
 
-* [OnlyOffice](https://www.onlyoffice.com/)
 * [Language Tool](https://languagetool.org/)
 * [Hemminway Editor](http://www.hemingwayapp.com/) (filefox download + installed as app with Gnome Web)
 
