@@ -89,6 +89,7 @@ tmux
 bashtop
 mesa-utils
 ubuntu-restricted-extras
+traceroute
 ```
 
 ## Office Software
