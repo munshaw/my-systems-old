@@ -145,7 +145,7 @@ From apt, I installed `weka weka-doc`.
 
 ## Development stuff
 
-Zero-configuration development envrionments are used like any other app. For example, LaTeX, RStudio, Octave, Godot, and Racket. As long as they don't require additional packages, they do not need to be isolated. Complex development environments are isolated in seperate `$HOME` directories to avoid contamination.
+Software that does not involve any extra dependancies or configuration can be installed via the package manager. If it cannot be installed via the package manager, or if it has dependancies/configuration, install it in it's own `HOME`.
 
 I installed the following from apt
 ```
