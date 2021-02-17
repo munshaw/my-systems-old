@@ -105,7 +105,7 @@ The following was installed via apt:
 libreoffice libreoffice-sdbc-hsqldb
 texlive-full
 python-pygments
-fonts-hack fonts-firacode ubuntustudio-fonts fonts-cascadia-code
+fonts-hack fonts-firacode ubuntustudio-fonts
 espeak-ng mbrola mbrola-en* mbrola-us*
 ```
 
@@ -140,8 +140,6 @@ From Pop! Shop, I installed:
 Geogebra
 Octave
 ```
-
-From apt, I installed `weka weka-doc`.
 
 ## Development stuff
 
