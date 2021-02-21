@@ -159,7 +159,7 @@ From Pop! Shop I installed:
 devhelp
 glade
 builder
-neovim neovimqt
+neovim
 brackets
 ```
 
