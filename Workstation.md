@@ -160,8 +160,10 @@ devhelp
 glade
 builder
 neovim
-visual studio code
+vscode
 ```
+
+In Visual Studio I installed the Vim and Terminal extensions.
 
 ### TODO: Create Rust and Haskell Generic Development Environments.
 
