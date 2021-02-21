@@ -159,7 +159,8 @@ From Pop! Shop I installed:
 devhelp
 glade
 builder
-neovim
+neovim neovimqt
+brackets
 ```
 
 ### TODO: Create Rust and Haskell Generic Development Environments.
