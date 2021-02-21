@@ -160,7 +160,6 @@ devhelp
 glade
 builder
 neovim
-brackets
 ```
 
 ### TODO: Create Rust and Haskell Generic Development Environments.
