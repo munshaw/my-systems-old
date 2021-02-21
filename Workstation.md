@@ -160,9 +160,8 @@ devhelp
 glade
 builder
 neovim
+visual studio code
 ```
-
-I installed [Komodo Edit](https://github.com/Komodo/KomodoEdit) for html work.
 
 ### TODO: Create Rust and Haskell Generic Development Environments.
 
