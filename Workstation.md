@@ -160,8 +160,10 @@ devhelp
 glade
 builder
 neovim
-vscode
+emacs
 ```
+
+I installed [Spacemacs](https://www.spacemacs.org/) for emacs.
 
 In Visual Studio I installed the Vim and Terminal extensions.
 
