@@ -163,7 +163,7 @@ neovim
 emacs
 ```
 
-I installed [Spacemacs](https://www.spacemacs.org/) for emacs.
+I installed [Spacemacs](https://www.spacemacs.org/) and [Source Code Pro](https://github.com/adobe-fonts/source-code-pro) for emacs.
 
 In Visual Studio I installed the Vim and Terminal extensions.
 
