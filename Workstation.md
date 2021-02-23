@@ -143,8 +143,6 @@ Octave
 
 ## Development stuff
 
-Software that does not involve any extra dependancies or configuration can be installed via the package manager. If it cannot be installed via the package manager, or if it has dependancies/configuration, install it in it's own `HOME`.
-
 I installed the following from apt
 ```
 racket
@@ -163,7 +161,7 @@ neovim
 emacs
 ```
 
-I installed [Spacemacs](https://www.spacemacs.org/) and [Source Code Pro](https://github.com/adobe-fonts/source-code-pro) for emacs.
+I installed [Spacemacs](https://www.spacemacs.org/).
 
 In Visual Studio I installed the Vim and Terminal extensions.
 
