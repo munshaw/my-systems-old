@@ -162,6 +162,15 @@ neovim
 
 I installed [Emacs](https://www.gnu.org/software/emacs/) from source, and [Spacemacs](https://www.spacemacs.org/).
 
+Top install Emacs from source, run:
+```
+apt build-dep emacs
+apt install libgnutls28-dev libwebkit2gtk-4.0-dev mailutils
+./configure --with-x-toolkit=gtk3 --with-cairo --with-xwidgets
+make
+make install
+```
+
 In Visual Studio I installed the Vim and Terminal extensions.
 
 ### TODO: Create Rust and Haskell Generic Development Environments.
