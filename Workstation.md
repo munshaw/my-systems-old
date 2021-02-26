@@ -169,6 +169,7 @@ apt install libgnutls28-dev libwebkit2gtk-4.0-dev mailutils
 ./configure --with-x-toolkit=gtk3 --with-cairo --with-xwidgets
 make
 make install
+git clone -b develop https://github.com/syl20bnr/spacemacs ~/.emacs.d
 ```
 
 In Visual Studio I installed the Vim and Terminal extensions.
