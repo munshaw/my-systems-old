@@ -158,10 +158,9 @@ devhelp
 glade
 builder
 neovim
-emacs
 ```
 
-I installed [Spacemacs](https://www.spacemacs.org/).
+I installed [Emacs](https://www.gnu.org/software/emacs/) from source, and [Spacemacs](https://www.spacemacs.org/).
 
 In Visual Studio I installed the Vim and Terminal extensions.
 
