@@ -96,7 +96,7 @@ traceroute
 
 I installed the following from the internet:
 
-* [Language Tool](https://languagetool.org/)
+* [Language Tool](https://github.com/languagetool-org/languagetool)
 * [Hemminway Editor](http://www.hemingwayapp.com/) (filefox download + installed as app with Gnome Web)
 
 The following was installed via apt:
