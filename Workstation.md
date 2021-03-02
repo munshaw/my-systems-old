@@ -165,8 +165,10 @@ I installed [Emacs](https://www.gnu.org/software/emacs/) from source, and [Space
 Top install Emacs from source, run:
 ```
 apt build-dep emacs
-apt install libgnutls28-dev libwebkit2gtk-4.0-dev mailutils
-./configure --with-x-toolkit=gtk3 --with-cairo --with-xwidgets
+apt install libgnutls28-dev libwebkit2gtk-4.0-dev mailutils libgccjit-10-dev
+git clone git://git.savannah.gnu.org/emacs.git -b feature/native-comp
+./autogen
+./configure --with-native-compilation --with-x-toolkit=gtk3 --with-cairo --with-xwidgets
 make
 make install
 git clone -b develop https://github.com/syl20bnr/spacemacs ~/.emacs.d
