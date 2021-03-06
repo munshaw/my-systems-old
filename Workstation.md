@@ -148,6 +148,7 @@ I installed the following from apt
 racket
 godot3
 hugo
+npm nodejs # for emacs
 ```
 
 From Pop! Shop I installed:
