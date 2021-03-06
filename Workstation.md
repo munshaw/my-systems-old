@@ -148,7 +148,6 @@ I installed the following from apt
 racket
 godot3
 hugo
-npm nodejs
 ```
 
 From Pop! Shop I installed:
@@ -174,7 +173,9 @@ make install
 git clone -b develop https://github.com/syl20bnr/spacemacs ~/.emacs.d
 ```
 
-In Visual Studio I installed the Vim and Terminal extensions.
+## Nodejs
+
+I installed [nodejs](https://nodejs.dev/) with nvm-sh.
 
 ### TODO: Create Rust and Haskell Generic Development Environments.
 
